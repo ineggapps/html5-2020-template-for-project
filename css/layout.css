@@ -4,7 +4,7 @@
 html,
 body {
   width: 100%;
-  min-width: 1080px;
+  min-width: 1180px;
   overflow-x: hidden;
   color: #333;
 }
@@ -49,11 +49,11 @@ a:hover {
   margin: 0 auto;
 }
 
-div.row {
+div.header_row {
   width: 100%;
   margin: 20px 0 40px;
 }
-div.row:after {
+div.header_row:after {
   clear: both;
   content: "";
   display: block;
@@ -163,6 +163,11 @@ ul#right_side li {
   padding-top: 130px;
   width: 100%;
   min-height: 693px;
+}
+
+.row {
+  width: 1180px;
+  margin: 0 auto;
 }
 
 .sample_row {

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+h2,
+h3 {
+  font-weight: 300;
+  font-family: "나눔스퀘어", NanumSquare, NS, "맑은 고딕", MalgunGothic, "돋움", Dotum;
+}
+
+.navy_button {
+  user-select: none;
+  display: block;
+  background-color: #233e83;
+  width: 500px;
+  height: 66px;
+  line-height: 66px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navy_button:hover {
+  color: #fff;
+}
+
+.row_full {
+  background: url("https://www.ediya.com/images/mypage/login_bg.jpg") center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 220px 0;
+}
+
+.login {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.login p,
+.login h2 {
+  text-align: center;
+}
+
+.login h2 {
+  font-size: 5.5rem;
+  font-weight: 100;
+}
+
+.welcome {
+  font-size: 2.5rem;
+  padding: 65px 0 25px;
+}
+
+.whitebox {
+  width: 800px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 50px 0;
+}
+
+.whitebox hr {
+  width: 15%;
+  margin: 50px auto;
+}
+
+.whitebox .checkbox_row {
+  margin: 15px 0;
+}
+
+.whitebox button {
+  border: 0 none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.subtitle,
+.title,
+.content_text {
+  text-align: center;
+}
+
+.subtitle {
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  letter-spacing: -0.2rem;
+  color: #233e83;
+}
+
+.content_text {
+  letter-spacing: -0.05rem;
+  line-height: 1.5rem;
+  color: #818181;
+  margin-bottom: 30px;
+}
+
+.text_input {
+  width: 480px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.text_input:first-child {
+  margin-bottom: 10px;
+}
+.login_menu {
+  margin: 20px 0;
+}
+.login_menu a {
+  display: block;
+  float: left;
+  width: 32.668%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border: solid 1px #ccd5e2;
+  font-size: 13px;
+  font-weight: 500;
+  color: #002f6c;
+  box-sizing: border-box;
+}
+.login_menu li:not(:last-child) a {
+  margin-right: 5px;
+}

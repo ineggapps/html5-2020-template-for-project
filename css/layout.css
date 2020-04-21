@@ -198,7 +198,6 @@ ul#right_side li {
 }
 .banner_visual {
   user-select: none;
-  background: url("https://ediya.com/images/whatsnew/news_visual.jpg") center;
   background-size: cover;
   height: 460px;
 }

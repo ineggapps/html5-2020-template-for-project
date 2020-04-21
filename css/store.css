@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.banner_visual {
+  background: url("https://ediya.com/images/whatsnew/news_visual.jpg") center;
+}
+
 .contents_header {
   margin-top: 100px;
   padding: 30px 0 60px;

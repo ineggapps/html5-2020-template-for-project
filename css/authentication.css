@@ -114,7 +114,7 @@ h3 {
 .login_menu a {
   display: block;
   float: left;
-  width: 32.668%;
+  width: 164px;
   height: 42px;
   line-height: 42px;
   text-align: center;
@@ -124,6 +124,12 @@ h3 {
   color: #002f6c;
   box-sizing: border-box;
 }
+.login_menu a:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
 .login_menu li:not(:last-child) a {
-  margin-right: 5px;
+  margin-right: 4px;
 }

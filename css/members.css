@@ -1,1 +1,5 @@
 @charset "UTF-8";
+
+.banner_visual {
+  background: url("https://www.ediya.com/images/members/members_visual.jpg") no-repeat center;
+}

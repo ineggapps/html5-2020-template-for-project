@@ -210,10 +210,58 @@ ul#right_side li {
 }
 
 .banner_visual .visual_text {
-  margin-top: 15px;
+  margin-top: 10px;
+  line-height: 1.7rem;
   font-size: 1.2rem;
   text-align: center;
 }
+
+/*lnb*/
+.lnb {
+  margin-top: 55px;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+.lnb li:first-child {
+  border-left: solid 1px #84847c;
+}
+
+.lnb li {
+  font-size: 0.85rem;
+  display: inline-block;
+  width: 178px;
+  height: 35px;
+  margin-right: -4px;
+  line-height: 35px;
+  color: #202023;
+  border-right: solid 1px #84847c;
+  border-top: solid 1px #84847c;
+  border-bottom: solid 1px #84847c;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.lnb li:hover,
+.lnb li.on {
+  font-weight: bold;
+  opacity: 1;
+  background-color: #84847c;
+}
+.lnb li:hover a,
+.lnb li.on a {
+  color: #fff;
+}
+
+.lnb:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+/*sample*/
 
 .sample_row {
   width: 100%;

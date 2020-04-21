@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap");
+html,
+body {
+  width: 100%;
+  min-width: 1080px;
+  min-height: 100%;
+  height: 100%;
+  /* overflow-x: hidden; 이걸 입력하면 스크롤바가 가려진다.*/
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+div {
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  color: #233e83;
+}
+
+a:hover {
+  color: #000;
+}
+.active {
+  color: #fff !important;
+}
+
+#wrap {
+  position: relative;
+  width: 100%;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+#header_container {
+  position: relative;
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+div.row {
+  width: 100%;
+  margin: 20px 0 40px;
+}
+div.row:after {
+  clear: both;
+  content: "";
+  display: block;
+  visibility: hidden;
+}
+ul#right_side {
+  float: right;
+  margin-right: 60px;
+}
+ul#right_side li {
+  float: left;
+  font-size: 0.9rem;
+  color: #555;
+  margin-right: 20px;
+}
+
+#right_side li:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  margin-left: 20px;
+  width: 1px;
+  height: 8px;
+  background-color: #ccc;
+}
+
+#gnb {
+  position: relative;
+  justify-content: space-between;
+}
+
+#gnb_area {
+  clear: both;
+  margin-top: 20px;
+}
+
+#logo {
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+  margin-right: 50px;
+  float: left;
+  font-size: 1.6rem;
+  vertical-align: top;
+}
+#gnb {
+  float: right;
+  color: #202023;
+}
+
+.main_menu {
+  font-size: 1.2rem;
+  z-index: 80;
+  width: 150px;
+  height: 40px;
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.main_menu:hover > a {
+  border-bottom: 3px solid #555555;
+}
+
+#gnb:hover .sub_gnb {
+  position: absolute;
+  top: 20px;
+  display: block;
+}
+
+#gnb:hover::after {
+  display: block;
+}
+#gnb::after {
+  display: none;
+  content: "";
+  position: fixed;
+  top: 120px;
+  width: 1000rem;
+  height: 150px;
+  background-color: #fff;
+  border-bottom: 2px solid #555555;
+  transform: translateX(-400rem);
+}
+
+.sub_gnb {
+  display: none;
+  margin-top: 20px;
+}
+
+.sub_gnb a {
+  color: #848484;
+}
+
+.sub_gnb a:hover {
+  color: #000;
+}
+
+.sub_menu {
+  font-size: 0.9rem;
+  margin: 12px 0;
+  letter-spacing: -0.05rem;
+}
+
+/*content 영역*/
+
+#content {
+  padding-top: 130px;
+  width: 100%;
+  min-height: 693px;
+}
+
+.sample_row {
+  width: 100%;
+  height: 680px;
+  background-color: #233e83;
+}
+
+/*footer 영역*/
+footer {
+  width: 100%;
+  background-color: #262626;
+}
+
+.bottom_util {
+  width: 100%;
+  border-bottom: 1px solid #464646;
+  padding: 26px 0;
+}
+
+.bottom_util ul {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.bottom_util ul li {
+  float: left;
+  font-size: 0.9rem;
+  padding: 0 34.7px;
+  text-align: center;
+}
+
+.bottom_util ul li a {
+  color: #818181;
+}
+
+.bottom_util ul li a:hover {
+  color: #fff;
+}
+
+.bottom_util ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.copyright {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 10px 0 35px;
+  text-align: center;
+  color: #6c6c6c;
+}
+
+.bottom_logo_container {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0 30px;
+  text-align: center;
+}
+
+.bottom_logo {
+  font-family: "Arial Black", sans-serif;
+  font-size: 2rem;
+  color: #6c6c6c;
+}

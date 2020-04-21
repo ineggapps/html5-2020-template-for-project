@@ -196,6 +196,12 @@ ul#right_side li {
 .row h3 {
   font-family: "나눔스퀘어", NanumSquare, NS, "맑은 고딕", MalgunGothic, "돋움", Dotum;
 }
+.row h3 span {
+  font-size: 1rem;
+  color: #818181;
+  margin-left: 20px;
+}
+
 .banner_visual {
   user-select: none;
   background-size: cover;
@@ -259,6 +265,13 @@ ul#right_side li {
   display: block;
   clear: both;
   visibility: hidden;
+}
+
+.row_title {
+  width: 100%;
+  padding: 35px 0;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 /*sample*/

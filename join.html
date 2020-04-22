@@ -59,70 +59,75 @@
           <article id="main_container">
             <!-- Content영역 -->
             <div class="banner_visual join">
-              <div class="row login">
+              <div class="row join">
                 <h2><span>회원가입</span></h2>
                 <p class="welcome"><span>Join us, Cookie&amp;Cream Coffee</span></p>
                 <p><span>쿠앤크 멤버스 가입을 위한 약관 동의 및 본인 인증단계입니다.</span></p>
               </div>
             </div>
             <div class="row">
-              <div class="row">
-                <h2>이메일을 입력해주세요.</h2>
-                <p>이메일은 멤버스 로그인 시 아이디로 사용됩니다.</p>
+              <form action="">
+                <div class="joinbox">
+                  <h3>이메일을 입력해주세요.</h3>
+                  <p class="join_text">이메일은 멤버스 로그인 시 아이디로 사용됩니다.</p>
 
-                <form action="">
-                  <input type="text" /> @ <input type="text" />
-                  <select>
-                    <option>직접입력</option>
-                    <option value="naver.com">naver.com</option>
-                    <option value="daum.net">daum.net</option>
-                    <option value="nate.com">nate.com</option>
-                    <option value="hanmail.net">hanmail.net</option>
-                    <option value="hotmail.com">hotmail.com</option>
-                    <option value="yahoo.co.kr">yahoo.co.kr</option>
-                    <option value="korea.com">korea.com</option>
-                    <option value="gmail.com">gmail.com</option>
-                    <option value="empal.com">empal.com</option>
-                    <option value="freechal.com">freechal.com</option>
-                    <option value="dreamwiz.com">dreamwiz.com</option>
-                    <option value="netian.com">netian.com</option>
-                    <option value="chol.net">chol.net</option>
-                  </select>
-                </form>
-              </div>
+                  <ul class="email">
+                    <li><input type="text" /></li>
+                    <li>@</li>
+                    <li><input type="text" /></li>
+                    <li>
+                      <select>
+                        <option>직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="hotmail.com">hotmail.com</option>
+                        <option value="yahoo.co.kr">yahoo.co.kr</option>
+                        <option value="korea.com">korea.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="empal.com">empal.com</option>
+                        <option value="freechal.com">freechal.com</option>
+                        <option value="dreamwiz.com">dreamwiz.com</option>
+                        <option value="netian.com">netian.com</option>
+                        <option value="chol.net">chol.net</option>
+                      </select>
+                    </li>
+                  </ul>
+                  <div class="agreement_wrap">
+                    <h3>서비스 이용약관</h3>
+                    <input type="checkbox" /> 전체동의 ( ※ 선택동의 사항이 포함되어 있습니다. )
+                    <br />
+                    쿠앤크 멤버스 서비스 이용약관 동의 (필수) <input type="checkbox" />
+                    <br />
+                    개인정보 수집 및 이용 동의 (필수) <input type="checkbox" />
+                    <br />
+                    위치기반서비스 이용약관 동의 (필수) <input type="checkbox" />
+                    <br />
+                    마케팅 활용 수신 동의 (필수) <input type="checkbox" />
+                    <br />
+                    광고성 정보 수신 동의 (필수) <input type="checkbox" />
+                    <br />
+                    ※ 선택 사항에 동의하지 않으셔도 서비스 가입 및 이용이 가능하나, 동의하지 않을
+                    경우 제공 가능한 관련 편의 사항 등 (주변매장찾기, 맞춤형 쿠폰, 기타 각종 혜택
+                    등)이 제한될 수 있습니다.
+                    <br />
+                  </div>
 
-              <div>서비스 이용약관</div>
-              전체동의 ( ※ 선택동의 사항이 포함되어 있습니다. )
-              <br />
-              쿠앤크 멤버스 서비스 이용약관 동의 (필수) <input type="checkbox" />
-              <br />
-              개인정보 수집 및 이용 동의 (필수) <input type="checkbox" />
-              <br />
-              위치기반서비스 이용약관 동의 (필수) <input type="checkbox" />
-              <br />
-              마케팅 활용 수신 동의 (필수) <input type="checkbox" />
-              <br />
-              광고성 정보 수신 동의 (필수) <input type="checkbox" />
-              <br />
-              ※ 선택 사항에 동의하지 않으셔도 서비스 가입 및 이용이 가능하나, 동의하지 않을 경우
-              제공 가능한 관련 편의 사항 등 (주변매장찾기, 맞춤형 쿠폰, 기타 각종 혜택 등)이 제한될
-              수 있습니다.
-              <br />
+                  <div class="join_form">
+                    회원정보입력 아이디(이메일) <input type="text" /> 이름
+                    <input type="text" /> 휴대폰 <input type="text" /> 비밀번호
+                    <input type="password" /> ※ 안전한 비밀번호를 위해 숫자, 문자 조합하여 10~16자
+                    이상으로 입력해주세요. 비밀번호확인 <input type="password" /> 닉네임
+                    <input type="text" />
+                    ※ 욕설 등 부적절한 단어는 제한을 받습니다.
+                    <button type="submit" name="btn">가입하기</button>
+                  </div>
 
-              <p>
-                <button type="submit" name="btn">가입하기</button>
-              </p>
-            </div>
-
-            <div>
-              회원정보입력
-              <form>
-                아이디(이메일) <input type="text" /> 이름 <input type="text" /> 휴대폰
-                <input type="text" /> 비밀번호 <input type="password" /> ※ 안전한 비밀번호를 위해
-                숫자, 문자 조합하여 10~16자 이상으로 입력해주세요. 비밀번호확인
-                <input type="password" /> 닉네임 <input type="text" />
-                ※ 욕설 등 부적절한 단어는 제한을 받습니다.
-                <button type="submit" name="btn">가입하기</button>
+                  <p>
+                    <button type="submit" name="btn">가입하기</button>
+                  </p>
+                </div>
               </form>
             </div>
             <!-- Content 영역 끝 -->

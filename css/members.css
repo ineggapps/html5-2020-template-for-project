@@ -4,6 +4,22 @@
   background: url("https://www.ediya.com/images/members/members_visual.jpg") no-repeat center;
 }
 
+h3 {
+  float: left;
+}
+
+.list_button {
+  user-select: none;
+  margin-top: 20px;
+  float: right;
+  width: 150px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+}
+
 .card_container {
   margin-top: 35px;
   width: 100%;

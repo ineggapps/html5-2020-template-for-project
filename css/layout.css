@@ -25,7 +25,8 @@ input {
   letter-spacing: -0.03em;
 }
 
-h1 {
+h1,
+.strong {
   color: #233e83;
 }
 

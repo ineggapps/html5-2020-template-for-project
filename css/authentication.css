@@ -5,6 +5,10 @@ h3 {
   font-family: "나눔스퀘어", NanumSquare, NS, "맑은 고딕", MalgunGothic, "돋움", Dotum;
 }
 
+.banner_visual.join {
+  background: url("https://www.ediya.com/images/mypage/join_bg.jpg") no-repeat center;
+}
+
 .navy_button {
   user-select: none;
   display: block;

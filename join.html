@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>COFFEE</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/authentication.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div id="header_container">
+          <div class="header_row">
+            <ul id="right_side">
+              <li><a href="./login.html">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+          <div id="gnb_area">
+            <h1 id="logo"><a href="./index.html">COOKIE&amp;CREAM</a></h1>
+            <ul id="gnb">
+              <li class="main_menu">
+                <a href="./teamenu.html">메뉴</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./teamenu.html">음료</a></li>
+                  <li class="sub_menu"><a href="./teamenu.html">에이드</a></li>
+                  <li class="sub_menu"><a href="./teamenu.html">베이커리</a></li>
+                </ul>
+              </li>
+              <li class="main_menu">
+                <a href="./members_card_list.html">쿠앤크 멤버스</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./members_card_list.html">카드 목록</a></li>
+                  <li class="sub_menu"><a href="#">카드 등록</a></li>
+                  <li class="sub_menu"><a href="#">카드 충전</a></li>
+                  <li class="sub_menu"><a href="#">쿠앤크오더</a></li>
+                </ul>
+              </li>
+              <li class="main_menu">
+                <a href="./notice_list1.html">쿠앤크 소식</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./notice_list1.html">공지사항</a></li>
+                </ul>
+              </li>
+              <li class="main_menu">
+                <a href="./store.html">매장찾기</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./store.html">매장찾기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main id="content">
+        <div id="main">
+          <article id="main_container">
+            <!-- Content영역 -->
+            <div class="banner_visual join">
+              <div class="row login">
+                <h2><span>회원가입</span></h2>
+                <p class="welcome"><span>Join us, Cookie&amp;Cream Coffee</span></p>
+                <p><span>쿠앤크 멤버스 가입을 위한 약관 동의 및 본인 인증단계입니다.</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <h2>이메일을 입력해주세요.</h2>
+                <p>이메일은 멤버스 로그인 시 아이디로 사용됩니다.</p>
+
+                <form action="">
+                  <input type="text" /> @ <input type="text" />
+                  <select>
+                    <option>직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                    <option value="korea.com">korea.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="empal.com">empal.com</option>
+                    <option value="freechal.com">freechal.com</option>
+                    <option value="dreamwiz.com">dreamwiz.com</option>
+                    <option value="netian.com">netian.com</option>
+                    <option value="chol.net">chol.net</option>
+                  </select>
+                </form>
+              </div>
+
+              <div>서비스 이용약관</div>
+              전체동의 ( ※ 선택동의 사항이 포함되어 있습니다. )
+              <br />
+              쿠앤크 멤버스 서비스 이용약관 동의 (필수) <input type="checkbox" />
+              <br />
+              개인정보 수집 및 이용 동의 (필수) <input type="checkbox" />
+              <br />
+              위치기반서비스 이용약관 동의 (필수) <input type="checkbox" />
+              <br />
+              마케팅 활용 수신 동의 (필수) <input type="checkbox" />
+              <br />
+              광고성 정보 수신 동의 (필수) <input type="checkbox" />
+              <br />
+              ※ 선택 사항에 동의하지 않으셔도 서비스 가입 및 이용이 가능하나, 동의하지 않을 경우
+              제공 가능한 관련 편의 사항 등 (주변매장찾기, 맞춤형 쿠폰, 기타 각종 혜택 등)이 제한될
+              수 있습니다.
+              <br />
+
+              <p>
+                <button type="submit" name="btn">가입하기</button>
+              </p>
+            </div>
+
+            <div>
+              회원정보입력
+              <form>
+                아이디(이메일) <input type="text" /> 이름 <input type="text" /> 휴대폰
+                <input type="text" /> 비밀번호 <input type="password" /> ※ 안전한 비밀번호를 위해
+                숫자, 문자 조합하여 10~16자 이상으로 입력해주세요. 비밀번호확인
+                <input type="password" /> 닉네임 <input type="text" />
+                ※ 욕설 등 부적절한 단어는 제한을 받습니다.
+                <button type="submit" name="btn">가입하기</button>
+              </form>
+            </div>
+            <!-- Content 영역 끝 -->
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="bottom_util">
+          <ul id="fnb">
+            <li><a href="#" class="active">개인정보 처리방침</a></li>
+            <li><a href="#">멤버스 이용약관</a></li>
+            <li><a href="#">가맹 안내</a></li>
+            <li><a href="#">대량쿠폰 구매</a></li>
+            <li><a href="#">채용 안내</a></li>
+            <li><a href="#">고객의소리</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">점주의 방</a></li>
+          </ul>
+        </div>
+        <div class="bottom_logo_container"><span class="bottom_logo">COOKIE&amp;CREAM</span></div>
+        <p class="copyright">&copy; 2020 COOKIE&CREAM COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+      </footer>
+    </div>
+  </body>
+</html>

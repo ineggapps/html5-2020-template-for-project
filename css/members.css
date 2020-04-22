@@ -10,12 +10,16 @@
 }
 
 .card_container > ul > li {
-  /* width: 570px; */
-  width: 100%;
+  width: 570px;
+  /* width: 100%; */
   margin-right: 20px;
   margin-bottom: 35px;
   height: 210px;
   float: left;
+}
+
+.card_container_full > ul > li {
+  width: 100%;
 }
 
 .card_container > ul > li > figure,
@@ -39,10 +43,15 @@
 .card_title {
   margin-top: 20px;
 }
-.card_title a {
+.detail {
+  font-size: 0.8rem;
+}
+
+.modify {
   font-size: 0.8rem;
   margin-left: 10px;
 }
+
 .card_title,
 .card_id,
 .card_remain {

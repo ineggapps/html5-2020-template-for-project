@@ -93,6 +93,7 @@ h3 {
 
 .joinbox {
   margin-top: 100px;
+  padding: 50px 0;
   width: 1180px;
   border: 1px solid #d9d9d9;
 }
@@ -103,17 +104,12 @@ h3 {
 }
 
 .joinbox h3 {
+  /* margin-top: 30px; */
   font-size: 2rem;
 }
 
 p.join_text {
-  margin: 10px 0 40px;
-}
-
-.joinbox input {
-  width: 100px;
-  height: 20px;
-  padding: 18px 10px;
+  margin: 20px 0 40px;
 }
 
 .joinbox select {
@@ -122,7 +118,7 @@ p.join_text {
 
 .joinbox input,
 .joinbox select {
-  border: 1px solid #d9d9d9;
+  border: 1px solid #cccccc;
   border-radius: 3px;
 }
 
@@ -130,16 +126,90 @@ p.join_text {
   border: 1px solid #233e83;
 }
 
+.component_wrap {
+  border-bottom: 1px solid #ebebeb;
+
+  clear: both;
+  width: 680px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
 ul.email {
   clear: both;
 }
 ul.email > li {
-  float: left;
+  display: inline-block;
   line-height: 55px;
 }
+ul.email input {
+  width: 211px;
+  height: 20px;
+  padding: 18px 10px;
+}
+ul.email input:last-child {
+  margin-right: 5px;
+}
+ul.email {
+  text-align: center;
+}
 
-.agreement_wrap {
+.agreement_box {
+  width: 100%;
+  margin: 30px 0;
+}
+.agreement_title:after {
+  content: "";
+  display: block;
   clear: both;
+  visibility: hidden;
+}
+.agreement_title {
+  margin: 20px 0;
+}
+
+.agreement_title.all h4 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  float: left;
+}
+
+.agreement_title.all h4 span {
+  font-size: 0.9rem;
+}
+
+.agreement_title.all input {
+  float: left;
+  margin-right: 10px;
+}
+
+.agreement_title h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  float: left;
+}
+
+.agreement_title h4 span.color {
+  color: #233e83;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.agreement_title input {
+  float: right;
+}
+
+.agreement_content_box {
+  clear: both;
+  background-color: #f8f8f8;
+  border: 1px solid #d9d9d9;
+  color: #7a7a7a;
+  border-radius: 3px;
+  padding: 20px;
+  height: 100px;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  overflow-y: auto;
 }
 
 .subtitle,

@@ -68,50 +68,134 @@
             <div class="row">
               <form action="">
                 <div class="joinbox">
-                  <h3>이메일을 입력해주세요.</h3>
-                  <p class="join_text">이메일은 멤버스 로그인 시 아이디로 사용됩니다.</p>
+                  <div class="email_wrap component_wrap">
+                    <h3>이메일을 입력해주세요.</h3>
+                    <p class="join_text">이메일은 멤버스 로그인 시 아이디로 사용됩니다.</p>
 
-                  <ul class="email">
-                    <li><input type="text" /></li>
-                    <li>@</li>
-                    <li><input type="text" /></li>
-                    <li>
-                      <select>
-                        <option>직접입력</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="daum.net">daum.net</option>
-                        <option value="nate.com">nate.com</option>
-                        <option value="hanmail.net">hanmail.net</option>
-                        <option value="hotmail.com">hotmail.com</option>
-                        <option value="yahoo.co.kr">yahoo.co.kr</option>
-                        <option value="korea.com">korea.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="empal.com">empal.com</option>
-                        <option value="freechal.com">freechal.com</option>
-                        <option value="dreamwiz.com">dreamwiz.com</option>
-                        <option value="netian.com">netian.com</option>
-                        <option value="chol.net">chol.net</option>
-                      </select>
-                    </li>
-                  </ul>
-                  <div class="agreement_wrap">
+                    <ul class="email">
+                      <li><input type="text" /></li>
+                      <li>@</li>
+                      <li><input type="text" class="email" /></li>
+                      <li>
+                        <select>
+                          <option>직접입력</option>
+                          <option value="naver.com">naver.com</option>
+                          <option value="daum.net">daum.net</option>
+                          <option value="nate.com">nate.com</option>
+                          <option value="hanmail.net">hanmail.net</option>
+                          <option value="hotmail.com">hotmail.com</option>
+                          <option value="yahoo.co.kr">yahoo.co.kr</option>
+                          <option value="korea.com">korea.com</option>
+                          <option value="gmail.com">gmail.com</option>
+                          <option value="empal.com">empal.com</option>
+                          <option value="freechal.com">freechal.com</option>
+                          <option value="dreamwiz.com">dreamwiz.com</option>
+                          <option value="netian.com">netian.com</option>
+                          <option value="chol.net">chol.net</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="agreement_wrap component_wrap">
                     <h3>서비스 이용약관</h3>
-                    <input type="checkbox" /> 전체동의 ( ※ 선택동의 사항이 포함되어 있습니다. )
-                    <br />
-                    쿠앤크 멤버스 서비스 이용약관 동의 (필수) <input type="checkbox" />
-                    <br />
-                    개인정보 수집 및 이용 동의 (필수) <input type="checkbox" />
-                    <br />
-                    위치기반서비스 이용약관 동의 (필수) <input type="checkbox" />
-                    <br />
-                    마케팅 활용 수신 동의 (필수) <input type="checkbox" />
-                    <br />
-                    광고성 정보 수신 동의 (필수) <input type="checkbox" />
-                    <br />
-                    ※ 선택 사항에 동의하지 않으셔도 서비스 가입 및 이용이 가능하나, 동의하지 않을
-                    경우 제공 가능한 관련 편의 사항 등 (주변매장찾기, 맞춤형 쿠폰, 기타 각종 혜택
-                    등)이 제한될 수 있습니다.
-                    <br />
+                    <div class="agreement_title all">
+                      <input type="checkbox" />
+                      <h4>전체동의 <span>( ※ 선택동의 사항이 포함되어 있습니다. )</span></h4>
+                    </div>
+                    <div class="agreement_box">
+                      <div class="agreement_title">
+                        <h4>
+                          쿠앤크 멤버스 서비스 이용약관 동의 <span class="color">(필수)</span>
+                        </h4>
+                        <input type="checkbox" />
+                      </div>
+                      <div class="agreement_content_box">
+                        <p>
+                          제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버
+                          몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라
+                          한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을
+                          규정함을 목적으로 합니다. ※「PC통신, 무선 등을 이용하는 전자상거래에
+                          대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+                        </p>
+                      </div>
+                    </div>
+                    <div class="agreement_box">
+                      <div class="agreement_title">
+                        <h4>
+                          쿠앤크 멤버스 서비스 이용약관 동의 <span class="color">(필수)</span>
+                        </h4>
+                        <input type="checkbox" />
+                      </div>
+                      <div class="agreement_content_box">
+                        <p>
+                          제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버
+                          몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라
+                          한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을
+                          규정함을 목적으로 합니다. ※「PC통신, 무선 등을 이용하는 전자상거래에
+                          대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+                        </p>
+                      </div>
+                    </div>
+                    <div class="agreement_box">
+                      <div class="agreement_title">
+                        <h4>개인정보 수집 및 이용 동의 <span class="color">(필수)</span></h4>
+                        <input type="checkbox" />
+                      </div>
+                      <div class="agreement_content_box">
+                        <p>
+                          제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버
+                          몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라
+                          한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을
+                          규정함을 목적으로 합니다. ※「PC통신, 무선 등을 이용하는 전자상거래에
+                          대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+                        </p>
+                      </div>
+                    </div>
+                    <div class="agreement_box">
+                      <div class="agreement_title">
+                        <h4>위치기반서비스 이용약관 동의 <span class="color">(필수)</span></h4>
+                        <input type="checkbox" />
+                      </div>
+                      <div class="agreement_content_box">
+                        <p>
+                          제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버
+                          몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라
+                          한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을
+                          규정함을 목적으로 합니다. ※「PC통신, 무선 등을 이용하는 전자상거래에
+                          대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+                        </p>
+                      </div>
+                    </div>
+                    <div class="agreement_box">
+                      <div class="agreement_title">
+                        <h4>마케팅 활용 수신 동의 <span class="color">(필수)</span></h4>
+                        <input type="checkbox" />
+                      </div>
+                      <div class="agreement_content_box">
+                        <p>
+                          제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버
+                          몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라
+                          한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을
+                          규정함을 목적으로 합니다. ※「PC통신, 무선 등을 이용하는 전자상거래에
+                          대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+                        </p>
+                      </div>
+                    </div>
+                    <div class="agreement_box">
+                      <div class="agreement_title">
+                        <h4>광고성 정보 수신 동의 <span class="color">(필수)</span></h4>
+                        <input type="checkbox" />
+                      </div>
+                      <div class="agreement_content_box">
+                        <p>
+                          제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버
+                          몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라
+                          한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을
+                          규정함을 목적으로 합니다. ※「PC통신, 무선 등을 이용하는 전자상거래에
+                          대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="join_form">
@@ -123,7 +207,6 @@
                     ※ 욕설 등 부적절한 단어는 제한을 받습니다.
                     <button type="submit" name="btn">가입하기</button>
                   </div>
-
                   <p>
                     <button type="submit" name="btn">가입하기</button>
                   </p>

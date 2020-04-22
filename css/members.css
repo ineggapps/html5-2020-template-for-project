@@ -20,6 +20,10 @@ h3 {
   font-size: 1rem;
 }
 
+.list_button:hover {
+  font-weight: bold;
+}
+
 .card_container {
   margin-top: 35px;
   width: 100%;

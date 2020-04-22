@@ -20,6 +20,8 @@ h3 {
   user-select: none;
   display: block;
   background-color: #233e83;
+  border: 0;
+  cursor: pointer;
   width: 500px;
   height: 66px;
   line-height: 66px;
@@ -113,6 +115,7 @@ p.join_text {
 }
 
 .joinbox select {
+  width: 175px;
   height: 57px;
 }
 
@@ -120,6 +123,7 @@ p.join_text {
 .joinbox select {
   border: 1px solid #cccccc;
   border-radius: 3px;
+  padding: 0 10px;
 }
 
 .joinbox input:focus {
@@ -146,8 +150,12 @@ ul.email input {
   width: 211px;
   height: 20px;
   padding: 18px 10px;
+  margin: 0 5px;
 }
-ul.email input:last-child {
+ul.email .id {
+  margin-left: 0;
+}
+ul.email .domain {
   margin-right: 5px;
 }
 ul.email {
@@ -158,44 +166,48 @@ ul.email {
   width: 100%;
   margin: 30px 0;
 }
-.agreement_title:after {
+.join_item_title:after {
   content: "";
   display: block;
   clear: both;
   visibility: hidden;
 }
-.agreement_title {
+.join_item_title {
   margin: 20px 0;
 }
 
-.agreement_title.all h4 {
+.join_item_title.submit {
+  margin-top: 50px;
+}
+
+.join_item_title.all h4 {
   font-size: 1.3rem;
   font-weight: normal;
   float: left;
 }
 
-.agreement_title.all h4 span {
+.join_item_title.all h4 span {
   font-size: 0.9rem;
 }
 
-.agreement_title.all input {
+.join_item_title.all input {
   float: left;
   margin-right: 10px;
 }
 
-.agreement_title h4 {
+.join_item_title h4 {
   font-size: 1.2rem;
   font-weight: normal;
   float: left;
 }
 
-.agreement_title h4 span.color {
+.join_item_title h4 span.color {
   color: #233e83;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.agreement_title input {
+.join_item_title input {
   float: right;
 }
 
@@ -210,6 +222,27 @@ ul.email {
   font-size: 0.9rem;
   line-height: 1.25rem;
   overflow-y: auto;
+}
+
+.join_item {
+  padding: 5px 50px;
+}
+
+.join_form strong {
+  display: inline-block;
+  width: 20%;
+}
+.join_form input {
+  width: 75%;
+  height: 50px;
+}
+.join_form p.desc {
+  user-select: none;
+  color: #797979;
+  margin: 10px 0 10px 21%;
+  letter-spacing: -0.08rem;
+  line-height: 1.2rem;
+  font-size: 0.9rem;
 }
 
 .subtitle,

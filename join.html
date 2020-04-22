@@ -73,9 +73,9 @@
                     <p class="join_text">이메일은 멤버스 로그인 시 아이디로 사용됩니다.</p>
 
                     <ul class="email">
-                      <li><input type="text" /></li>
+                      <li><input type="text" class="email id" /></li>
                       <li>@</li>
-                      <li><input type="text" class="email" /></li>
+                      <li><input type="text" class="email domain" /></li>
                       <li>
                         <select>
                           <option>직접입력</option>
@@ -96,14 +96,14 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="agreement_wrap component_wrap">
+                  <div class="component_wrap">
                     <h3>서비스 이용약관</h3>
-                    <div class="agreement_title all">
+                    <div class="join_item_title all">
                       <input type="checkbox" />
                       <h4>전체동의 <span>( ※ 선택동의 사항이 포함되어 있습니다. )</span></h4>
                     </div>
                     <div class="agreement_box">
-                      <div class="agreement_title">
+                      <div class="join_item_title">
                         <h4>
                           쿠앤크 멤버스 서비스 이용약관 동의 <span class="color">(필수)</span>
                         </h4>
@@ -120,7 +120,7 @@
                       </div>
                     </div>
                     <div class="agreement_box">
-                      <div class="agreement_title">
+                      <div class="join_item_title">
                         <h4>
                           쿠앤크 멤버스 서비스 이용약관 동의 <span class="color">(필수)</span>
                         </h4>
@@ -137,7 +137,7 @@
                       </div>
                     </div>
                     <div class="agreement_box">
-                      <div class="agreement_title">
+                      <div class="join_item_title">
                         <h4>개인정보 수집 및 이용 동의 <span class="color">(필수)</span></h4>
                         <input type="checkbox" />
                       </div>
@@ -152,7 +152,7 @@
                       </div>
                     </div>
                     <div class="agreement_box">
-                      <div class="agreement_title">
+                      <div class="join_item_title">
                         <h4>위치기반서비스 이용약관 동의 <span class="color">(필수)</span></h4>
                         <input type="checkbox" />
                       </div>
@@ -167,7 +167,7 @@
                       </div>
                     </div>
                     <div class="agreement_box">
-                      <div class="agreement_title">
+                      <div class="join_item_title">
                         <h4>마케팅 활용 수신 동의 <span class="color">(필수)</span></h4>
                         <input type="checkbox" />
                       </div>
@@ -182,7 +182,7 @@
                       </div>
                     </div>
                     <div class="agreement_box">
-                      <div class="agreement_title">
+                      <div class="join_item_title">
                         <h4>광고성 정보 수신 동의 <span class="color">(필수)</span></h4>
                         <input type="checkbox" />
                       </div>
@@ -199,17 +199,35 @@
                   </div>
 
                   <div class="join_form">
-                    회원정보입력 아이디(이메일) <input type="text" /> 이름
-                    <input type="text" /> 휴대폰 <input type="text" /> 비밀번호
-                    <input type="password" /> ※ 안전한 비밀번호를 위해 숫자, 문자 조합하여 10~16자
-                    이상으로 입력해주세요. 비밀번호확인 <input type="password" /> 닉네임
-                    <input type="text" />
-                    ※ 욕설 등 부적절한 단어는 제한을 받습니다.
-                    <button type="submit" name="btn">가입하기</button>
+                    <div class="component_wrap">
+                      <div class="join_item_title">
+                        <h3>회원정보입력</h3>
+                      </div>
+                      <div class="join_item"><strong>아이디</strong> <input type="text" /></div>
+                      <div class="join_item"><strong>이름</strong> <input type="text" /></div>
+                      <div class="join_item">
+                        <strong>별명</strong> <input type="text" />
+                        <p class="desc">※ 욕설 등 부적절한 단어는 제한을 받습니다.</p>
+                      </div>
+                      <div class="join_item"><strong>휴대폰</strong> <input type="text" /></div>
+                      <div class="join_item">
+                        <strong>비밀번호</strong> <input type="password" />
+                        <p class="desc">
+                          ※ 안전한 비밀번호를 위해 숫자, 문자 조합하여 10~16자 이상으로
+                          입력해주세요.
+                        </p>
+                      </div>
+                      <div class="join_item">
+                        <strong>비밀번호 확인</strong> <input type="password" />
+                        <p class="desc">
+                          비밀번호를 한 번 더 입력하세요
+                        </p>
+                      </div>
+                    </div>
+                    <div class="join_item_title submit">
+                      <button type="submit" name="btn" class="navy_button">가입하기</button>
+                    </div>
                   </div>
-                  <p>
-                    <button type="submit" name="btn">가입하기</button>
-                  </p>
                 </div>
               </form>
             </div>

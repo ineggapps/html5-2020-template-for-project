@@ -110,3 +110,22 @@
 #card_history td {
   padding: 20px;
 }
+
+.col_no {
+  width: 5%;
+}
+.col_category {
+  width: 15%;
+}
+.col_content {
+  width: 15%;
+}
+.col_store {
+  width: 15%;
+}
+.col_amount {
+  width: 15%;
+}
+.col_date {
+  width: auto;
+}

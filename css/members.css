@@ -158,3 +158,53 @@ h3 {
 .col_date {
   width: auto;
 }
+
+/*카드 충전*/
+#card_charge {
+  width: 100%;
+  border-top: 3px solid #233e83;
+}
+#card_charge thead {
+  display: none;
+}
+#card_charge td {
+  padding: 20px;
+}
+#card_charge tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+#card_charge p.desc {
+  font-size: 0.8rem;
+}
+#card_charge .desc_red {
+  color: #a52035;
+}
+#card_charge .desc_blue {
+  color: #233e83;
+}
+
+#card_charge .charge_option {
+  margin: 15px 0;
+}
+#card_charge .charge_option > li {
+  display: inline-block;
+}
+
+.col_charge_category {
+  width: 15%;
+  background-color: #f4f4f4;
+}
+
+.col_charge_data {
+  width: 85%;
+}
+
+.list_button.submit {
+  background-color: #233e83;
+  color: #fff;
+}
+
+.row.buttons *:not(:last-child) {
+  margin-left: 10px;
+}

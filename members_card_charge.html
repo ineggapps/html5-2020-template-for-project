@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>COFFEE</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/members.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div id="header_container">
+          <div class="header_row">
+            <ul id="right_side">
+              <li><a href="./login.html">로그인</a></li>
+              <li><a href="./join.html">회원가입</a></li>
+            </ul>
+          </div>
+          <div id="gnb_area">
+            <h1 id="logo"><a href="./index.html">COOKIE&amp;CREAM</a></h1>
+            <ul id="gnb">
+              <li class="main_menu">
+                <a href="./teamenu.html">메뉴</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./teamenu.html">음료</a></li>
+                  <li class="sub_menu"><a href="./teamenu.html">에이드</a></li>
+                  <li class="sub_menu"><a href="./teamenu.html">베이커리</a></li>
+                </ul>
+              </li>
+              <li class="main_menu">
+                <a href="./members_card_list.html">쿠앤크 멤버스</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./members_card_list.html">카드 목록</a></li>
+                  <li class="sub_menu"><a href="#">카드 등록</a></li>
+                  <li class="sub_menu"><a href="#">카드 충전</a></li>
+                  <li class="sub_menu"><a href="#">쿠앤크오더</a></li>
+                </ul>
+              </li>
+              <li class="main_menu">
+                <a href="./notice_list1.html">쿠앤크 소식</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./notice_list1.html">공지사항</a></li>
+                </ul>
+              </li>
+              <li class="main_menu">
+                <a href="./store.html">매장찾기</a>
+                <ul class="sub_gnb">
+                  <li class="sub_menu"><a href="./store.html">매장찾기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main id="content">
+        <div id="main">
+          <article id="main_container">
+            <!-- Content영역 -->
+            <div class="banner_visual">
+              <h2><span>쿠앤크 멤버스</span></h2>
+              <div class="visual_text">
+                <span
+                  >쉽고 빠른 주문, 편리한 결제와 적립은 기본<br />친구에게 선물까지, 쿠앤크멤버스를
+                  경험해보세요.</span
+                >
+              </div>
+              <ul class="lnb">
+                <li class="on"><a href="#">카드 목록</a></li>
+                <li><a href="#">카드 등록</a></li>
+                <li><a href="#">카드 충전</a></li>
+                <li><a href="#">쿠앤크 오더</a></li>
+              </ul>
+            </div>
+            <form>
+              <div class="row">
+                <div class="row_title">
+                  <h3>카드 충전하기</h3>
+                </div>
+                <div class="card_container card_container_full">
+                  <ul>
+                    <li>
+                      <figure>
+                        <img
+                          src="https://image.istarbucks.co.kr/cardImg/20200323/007409_WEB.png"
+                          alt="card"
+                        />
+                      </figure>
+                      <div>
+                        <p class="card_title detail">
+                          <strong>카드이름</strong><a href="#" class="modify">수정</a>
+                        </p>
+                        <p class="card_id">(123456)</p>
+                        <p class="card_remain">잔액 <strong>999,999,999</strong>원</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <table id="card_charge">
+                  <thead>
+                    <tr>
+                      <td>항목</td>
+                      <td>입력</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="col_charge_category">충전 금액 선택</td>
+                      <td class="col_charge_data">
+                        <p class="desc">
+                          충전 후 총 카드잔액: <strong class="desc_blue">999,999</strong>원
+                        </p>
+                        <ul class="charge_option">
+                          <li>
+                            <label
+                              ><input type="radio" value="100000" name="price" /><span
+                                >10만원</span
+                              ></label
+                            >
+                          </li>
+                          <li>
+                            <label
+                              ><input type="radio" value="50000" name="price" /><span
+                                >5만원</span
+                              ></label
+                            >
+                          </li>
+                          <li>
+                            <label
+                              ><input type="radio" value="30000" name="price" /><span
+                                >3만원</span
+                              ></label
+                            >
+                          </li>
+                          <li>
+                            <label
+                              ><input type="radio" value="10000" name="price" /><span
+                                >1만원</span
+                              ></label
+                            >
+                          </li>
+                        </ul>
+                        <p class="desc_red desc">
+                          ※쿠앤크 커피 온라인 충전은 1만 원 단위로 최대 55만원까지 가능하며, 충전 후
+                          합계 잔액이 55만 원을 초과할 수 없습니다.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col_charge_category">결제 시점</td>
+                      <td class="col_charge_data"><strong class="desc_blue">즉시</strong> 결제</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </form>
+            <div class="row buttons">
+              <a href="./members_card_list.html" class="list_button">목록</a>
+              <a href="#" class="list_button submit" onclick="submit()">충전하기</a>
+            </div>
+            <!-- Content 영역 끝 -->
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="bottom_util">
+          <ul id="fnb">
+            <li><a href="#" class="active">개인정보 처리방침</a></li>
+            <li><a href="#">멤버스 이용약관</a></li>
+            <li><a href="#">가맹 안내</a></li>
+            <li><a href="#">대량쿠폰 구매</a></li>
+            <li><a href="#">채용 안내</a></li>
+            <li><a href="#">고객의소리</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">점주의 방</a></li>
+          </ul>
+        </div>
+        <div class="bottom_logo_container"><span class="bottom_logo">COOKIE&amp;CREAM</span></div>
+        <p class="copyright">&copy; 2020 COOKIE&CREAM COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+      </footer>
+    </div>
+  </body>
+</html>

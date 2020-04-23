@@ -6,7 +6,7 @@ h3 {
 }
 
 .banner_visual.join {
-  background: url("https://www.ediya.com/images/mypage/join_bg.jpg") no-repeat center;
+  background: url("../images/authentication/join.jpg") no-repeat center;
   background-size: cover;
   height: 850px;
 }
@@ -35,7 +35,7 @@ h3 {
 }
 
 .row_full {
-  background: url("https://www.ediya.com/images/mypage/login_bg.jpg") center;
+  background: url("../images/authentication/login.jpg") center;
   background-size: cover;
   background-attachment: fixed;
 

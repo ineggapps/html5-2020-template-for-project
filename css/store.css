@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .banner_visual {
-  background: url("https://ediya.com/images/whatsnew/news_visual.jpg") center;
+  background: url("../images/store/store_visual.jpg") center 24%;
 }
 
 .contents_header {

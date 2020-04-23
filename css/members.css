@@ -25,6 +25,7 @@ h3 {
 }
 
 .card_container {
+  user-select: none;
   margin-top: 35px;
   width: 100%;
 }
@@ -207,4 +208,27 @@ h3 {
 
 .row.buttons *:not(:last-child) {
   margin-left: 10px;
+}
+
+/*카드 등록*/
+.card_container.card_register li {
+  margin-bottom: 60px;
+}
+.card_container.card_register li,
+.card_container.card_register li img {
+  width: 280px;
+  height: 176px;
+}
+.card_container.card_register li:nth-child(4n) {
+  margin-right: 0;
+}
+.card_container .next_line {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  margin: 0;
+}
+.card_container .next_line p {
+  font-size: 0.9rem;
+  margin: 10px 0;
 }

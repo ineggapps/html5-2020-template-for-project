@@ -7,3 +7,4 @@
 - 점주의 방
   - [배민 사장님광장](https://ceo.baemin.com/#/about/baemin) + 상상력
     - [배민 셀프서비스](https://ceo.baemin.com/guide/detail/G51001)
+      - ![배민 셀프서비스](https://img-cdn.baemin.com/fw/ceoFile/2020/3/11/1583909359240_kkedit-1583909358847.jpg)

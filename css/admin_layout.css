@@ -26,8 +26,10 @@ input {
   letter-spacing: -0.03em;
 }
 header {
+  user-select: none;
   position: fixed;
   width: 280px;
+  min-height: 500px;
   height: 100%;
   /* background-color: #233e83; */
   background-color: #222328;
@@ -44,20 +46,17 @@ header {
   font-size: 2rem;
 }
 
-#gnb li {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 #gnb > li {
   color: #9799a7;
+  font-weight: bold;
+  font-size: 1.2rem;
   margin: 20px 0;
 }
 
 .gnb_sub > li {
   font-size: 1rem;
   text-indent: 1rem;
-  margin: 30px 0;
+  margin: 23px 0;
   color: #eff1f1;
 }
 
@@ -105,13 +104,17 @@ header {
   header {
     position: static;
     width: 100%;
-  }
-
-  .header_inner {
-    position: static;
+    min-height: 700px;
   }
 
   .header_bottom {
     position: static;
+  }
+}
+
+@media (max-height: 647px) {
+  /*세로 메뉴*/
+  .header_bottom {
+    display: none;
   }
 }

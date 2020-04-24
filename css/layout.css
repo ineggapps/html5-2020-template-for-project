@@ -113,13 +113,10 @@ ul#right_side li {
   position: relative;
 }
 
-#gnb > li > a > span:after {
-  display: block;
-  content: "";
-  width: 0px;
-  height: 4px;
-  background: #000;
-  margin: 10px auto;
+/*애니메이션 요소 공통*/
+#gnb > li > a > span:after,
+#gnb:after,
+.sub_gnb {
   transition-timing-function: ease-in-out;
   -o-transition-timing-function: ease-in-out;
   -moz-transition-timing-function: ease-in-out;
@@ -128,6 +125,16 @@ ul#right_side li {
   -o-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
+}
+/*애니메이션 요소 공통*/
+
+#gnb > li > a > span:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 4px;
+  background: #000;
+  margin: 10px auto;
 }
 
 #gnb > li > a:hover > span:after {
@@ -158,34 +165,39 @@ ul#right_side li {
   content: "";
 }
 
-#gnb:hover .sub_gnb {
-  position: absolute;
-  top: 20px;
+#gnb:after {
   display: block;
-}
-
-#gnb:hover::after {
-  display: block;
-}
-#gnb::after {
-  display: none;
   content: "";
   position: fixed;
   top: 120px;
   width: 1000rem;
-  height: 150px;
+  height: 0;
   background-color: #fff;
-  border-bottom: 2px solid #555555;
   transform: translateX(-400rem);
 }
 
-.sub_gnb {
-  display: none;
-  margin-top: 20px;
+#gnb .sub_gnb {
+  position: absolute;
+  top: 40px;
+  left: 10px;
   width: 100%;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
   text-align: left;
 }
 
+#gnb:hover .sub_gnb {
+  opacity: 1;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+#gnb:hover:after {
+  height: 150px;
+  border-bottom: 2px solid #555555;
+}
 .sub_gnb a {
   color: #848484;
 }
@@ -196,7 +208,7 @@ ul#right_side li {
 
 .sub_menu {
   font-size: 0.9rem;
-  margin: 12px 0;
+  margin: 15px 0;
   letter-spacing: -0.05rem;
 }
 

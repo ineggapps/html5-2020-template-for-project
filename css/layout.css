@@ -134,7 +134,7 @@ ul#right_side li {
   width: 0px;
   height: 4px;
   background: #000;
-  margin: 10px auto;
+  margin: 6px auto;
 }
 
 #gnb > li > a:hover > span:after {
@@ -178,7 +178,7 @@ ul#right_side li {
 
 #gnb .sub_gnb {
   position: absolute;
-  top: 40px;
+  top: 38px;
   left: 10px;
   overflow: hidden;
   width: 100%;

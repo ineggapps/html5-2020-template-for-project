@@ -5,7 +5,8 @@
 html,
 body {
   width: 100%;
-  min-width: 1180px;
+  height: 100%;
+  /* min-width: 1180px; */
   overflow-x: hidden;
   color: #333;
 }
@@ -102,17 +103,44 @@ header {
   color: #eff1f1;
 }
 
+main,
+footer {
+  padding-left: 280px;
+  width: 100%;
+}
+
+main {
+  /* background-color: yellow; */
+  min-height: 800px;
+}
+
+/* footer {
+  background-color: thistle;
+}
+
+p.copyright {
+  text-align: center;
+}
+
+footer p.copyright span {
+} */
 /*미디어쿼리*/
 
 @media (max-width: 600px) {
   header {
     position: static;
     width: 100%;
-    min-height: 700px;
+    min-height: 600px;
   }
 
   .header_bottom {
-    position: static;
+    /* position: static; */
+    display: none;
+  }
+
+  main,
+  footer {
+    padding-left: 0;
   }
 }
 

@@ -286,8 +286,6 @@ ul#right_side li {
 .lnb li {
   font-size: 0.85rem;
   display: inline-block;
-  width: 178px;
-  height: 35px;
   margin-right: -4px;
   line-height: 35px;
   color: #202023;
@@ -296,6 +294,12 @@ ul#right_side li {
   border-bottom: solid 1px #84847c;
   cursor: pointer;
   opacity: 0.7;
+}
+
+.lnb li a {
+  display: block;
+  width: 178px;
+  height: 35px;
 }
 
 .lnb li:hover,

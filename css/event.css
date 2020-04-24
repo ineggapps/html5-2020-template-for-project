@@ -1,0 +1,5 @@
+.banner_visual {
+  background: url("../images/board/banner_event.jpg") no-repeat center 25%;
+  background-size: cover;
+  color: #fff;
+}

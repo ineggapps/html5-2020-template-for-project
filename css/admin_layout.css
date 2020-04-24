@@ -9,6 +9,7 @@ body {
   /* min-width: 1180px; */
   overflow-x: hidden;
   color: #333;
+  background-color: #f4f4f4;
 }
 input:focus,
 button:focus,
@@ -29,6 +30,8 @@ input {
 header {
   user-select: none;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 280px;
   min-height: 500px;
   height: 100%;
@@ -105,13 +108,26 @@ header {
 
 main,
 footer {
-  padding-left: 280px;
+  position: relative;
+  left: 280px;
+  width: calc(100% - 280px);
+}
+#main_container {
   width: 100%;
 }
-
 main {
   /* background-color: yellow; */
   min-height: 800px;
+}
+
+.content_box {
+  /* background-color: #fff; */
+  background-color: #fff;
+  border-radius: 3px;
+  width: 85%;
+  margin: 30px auto;
+  min-height: 100px;
+  padding: 40px;
 }
 
 /* footer {
@@ -140,6 +156,8 @@ footer p.copyright span {
 
   main,
   footer {
+    width: 100%;
+    left: 0;
     padding-left: 0;
   }
 }

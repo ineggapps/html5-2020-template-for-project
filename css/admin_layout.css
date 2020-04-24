@@ -60,6 +60,10 @@ header {
   color: #eff1f1;
 }
 
+.gnb_sub > li:hover {
+  color: #47c9c6;
+}
+
 .header_middle {
   padding: 0 50px;
 }

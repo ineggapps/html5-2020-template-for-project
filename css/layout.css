@@ -87,11 +87,6 @@ ul#right_side li {
   background-color: #ccc;
 }
 
-#gnb {
-  position: relative;
-  justify-content: space-between;
-}
-
 #gnb_area {
   clear: both;
   margin-top: 20px;
@@ -105,24 +100,62 @@ ul#right_side li {
   font-size: 1.6rem;
   vertical-align: top;
 }
+
 #gnb {
   float: right;
+  width: 60%;
+  text-align: center;
   color: #202023;
+}
+
+#gnb > li > a > span {
+  display: block;
+  position: relative;
+}
+
+#gnb > li > a > span:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 4px;
+  background: #000;
+  margin: 10px auto;
+  transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+
+#gnb > li > a:hover > span:after {
+  width: 100%;
+  background-color: #233e83;
 }
 
 .main_menu {
   font-size: 1.2rem;
   z-index: 80;
-  width: 150px;
   height: 40px;
   position: relative;
-  float: left;
+  display: inline-block;
   padding: 0 10px;
   margin-bottom: 10px;
 }
 
-.main_menu:hover > a {
-  border-bottom: 3px solid #555555;
+.main_menu:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main_menu > a {
+  margin: 20px 0;
+}
+.main_menu > a:after {
+  clear: both;
+  display: block;
+  content: "";
 }
 
 #gnb:hover .sub_gnb {
@@ -149,6 +182,8 @@ ul#right_side li {
 .sub_gnb {
   display: none;
   margin-top: 20px;
+  width: 100%;
+  text-align: left;
 }
 
 .sub_gnb a {

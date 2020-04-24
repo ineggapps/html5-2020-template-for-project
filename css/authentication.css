@@ -8,6 +8,7 @@ h3 {
 .banner_visual.join {
   background: url("../images/authentication/join.jpg") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   height: 850px;
 }
 

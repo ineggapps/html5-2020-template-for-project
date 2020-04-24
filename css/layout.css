@@ -343,27 +343,27 @@ footer {
   padding: 26px 0;
 }
 
-.bottom_util ul {
-  width: 1180px;
+.bottom_util #fnb {
   margin: 0 auto;
-}
-
-.bottom_util ul li {
-  float: left;
-  font-size: 0.9rem;
-  padding: 0 34.7px;
   text-align: center;
 }
 
-.bottom_util ul li a {
+.bottom_util #fnb li {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.bottom_util #fnb li a {
   color: #818181;
 }
 
-.bottom_util ul li a:hover {
+.bottom_util #fnb li a:hover {
   color: #fff;
 }
 
-.bottom_util ul:after {
+.bottom_util #fnb:after {
   content: "";
   display: block;
   clear: both;

@@ -108,6 +108,10 @@ ul#right_side li {
   color: #202023;
 }
 
+#gnb > li {
+  height: 100%;
+}
+
 #gnb > li > a > span {
   display: block;
   position: relative;
@@ -137,7 +141,8 @@ ul#right_side li {
   margin: 6px auto;
 }
 
-#gnb > li > a:hover > span:after {
+#gnb > li > a:hover > span:after,
+#gnb > li:hover > a > span:after {
   width: 100%;
   background-color: #233e83;
 }
@@ -178,7 +183,7 @@ ul#right_side li {
 
 #gnb .sub_gnb {
   position: absolute;
-  top: 38px;
+  margin-top: -38px;
   left: 10px;
   overflow: hidden;
   width: 100%;
@@ -191,6 +196,7 @@ ul#right_side li {
   display: block;
   overflow: visible;
   height: 100%;
+  margin-top: 0;
   opacity: 1;
 }
 
@@ -208,7 +214,7 @@ ul#right_side li {
 
 .sub_menu {
   font-size: 0.9rem;
-  margin: 15px 0;
+  padding: 8px 0;
   letter-spacing: -0.05rem;
 }
 

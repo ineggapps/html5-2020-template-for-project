@@ -6,7 +6,8 @@
 }
 #order_process li {
   display: inline-block;
-  padding: 0 10%;
+  padding: 0 8%;
+  transition: all ease-in-out 0.2s;
 }
 
 .order_item a {
@@ -78,4 +79,11 @@
 }
 .col_product_detail > li > ul > li {
   padding: 3px 0;
+}
+
+/*반응형*/
+@media (max-width: 1050px) {
+  #order_process li {
+    padding: 0 2%;
+  }
 }

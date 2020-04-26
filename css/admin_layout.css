@@ -40,13 +40,21 @@ header {
   color: #fff;
 }
 
+.logo {
+  width: 48px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+
 .header_inner {
   height: 100%;
   position: relative;
 }
 
 .header_top h1 {
-  padding: 40px;
+  /* padding: 40px; */
+  padding: 40px 40px 20px 40px;
   font-size: 2rem;
 }
 

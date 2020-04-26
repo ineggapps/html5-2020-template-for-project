@@ -243,3 +243,9 @@ hr#border {
     min-width: 295px;
   }
 }
+
+@media (max-width: 500px) {
+  body {
+    min-width: 500px;
+  }
+}

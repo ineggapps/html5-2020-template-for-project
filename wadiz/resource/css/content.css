@@ -159,10 +159,6 @@ ul.categoryContent .text {
 @media (min-width: 768px) {
 }
 @media (max-width: 768px) {
-  .rowInner {
-    padding: 0;
-    max-width: 100%;
-  }
   .item {
     width: 100%;
     clear: both;
@@ -170,6 +166,7 @@ ul.categoryContent .text {
   }
   .gridContent {
     display: block;
+    padding: 0 10px;
   }
   .itemInner .thumbnail {
     float: left;

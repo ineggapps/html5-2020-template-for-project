@@ -175,6 +175,11 @@ h1.logo {
   font-weight: 800;
 }
 
+.titleBar .keyword {
+  width: 20%;
+  padding: 0 20px;
+}
+
 .titleBar .option {
   width: 50%;
   text-align: right;
@@ -194,6 +199,7 @@ h1.logo {
 }
 .option select {
   border: 0;
+  width: 100px;
 }
 
 .option a.searchButton {
@@ -282,6 +288,7 @@ ul.fnb li:not(:last-child) {
     display: none;
   }
   .titleBar .option {
+    box-sizing: border-box;
     float: left;
     width: 100%;
   }
@@ -323,6 +330,28 @@ ul.fnb li:not(:last-child) {
   }
 }
 
+@media (max-width: 768px) {
+  .rowInner {
+    padding: 0;
+    max-width: 100%;
+  }
+  .titleBar {
+    border-top: 1px solid #e5e5e5;
+  }
+  .titleBar .option form {
+    border-right: 1px solid #e5e5e5;
+    text-align: left;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -ms-flex-align: center;
+  }
+  .titleBar .option .keyword {
+    flex-grow: 2;
+  }
+}
 @media (max-width: 313px) {
   /*상단 헤더*/
   .headerBannerInner {

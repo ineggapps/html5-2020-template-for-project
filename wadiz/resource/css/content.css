@@ -21,7 +21,7 @@ ul.categoryContent li {
 }
 
 ul.categoryContent li:not(:first-child) {
-  margin-left: 20px;
+  margin-left: 33px;
 }
 
 ul.categoryContent .circle {
@@ -125,8 +125,10 @@ ul.categoryContent .text {
 }
 
 .progressBar {
+  width: 0;
   height: 100%;
   background-color: #00b2b2;
+  transition: all linear 0.2s;
 }
 
 .status ul li span.percent {
@@ -184,6 +186,6 @@ ul.categoryContent .text {
     margin-top: 0;
   }
   .status {
-    margin-top: 35px;
+    margin-top: 10px;
   }
 }

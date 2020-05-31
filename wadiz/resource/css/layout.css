@@ -112,6 +112,13 @@ h1.logo {
   display: inline-block;
 }
 
+.gnbSub li:first-child {
+  margin-left: 20px;
+}
+.gnbSub li:last-child {
+  margin-right: 20px;
+}
+
 .gnbSub li a {
   width: 120px;
   height: 48px;
@@ -307,6 +314,12 @@ ul.fnb li:not(:last-child) {
   }
   .footerWarningInner {
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gnbSub .trivial {
+    display: none;
   }
 }
 

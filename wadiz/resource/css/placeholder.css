@@ -1,0 +1,45 @@
+/* - Chrome ≤56,
+   - Safari 5-10.0
+   - iOS Safari 4.2-10.2
+   - Opera 15-43
+   - Opera Mobile 12-12.1
+   - Android Browser 2.1-4.4.4
+   - Samsung Internet ≤6.2
+   - QQ Browser */
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* Firefox 4-18 */
+:-moz-placeholder {
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* Firefox 19-50 */
+::-moz-placeholder {
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* - Internet Explorer 10–11
+   - Internet Explorer Mobile 10-11 */
+:-ms-input-placeholder {
+  color: #ccc !important;
+  font-weight: 400 !important;
+}
+
+/* Edge (also supports ::-webkit-input-placeholder) */
+::-ms-input-placeholder {
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* CSS Pseudo-Elements Level 4 Editor's Draft
+   - Browsers not mentioned in vendor prefixes
+   - Browser of newer versions than mentioned in vendor prefixes */
+::placeholder {
+  color: #ccc;
+  font-weight: 400;
+}

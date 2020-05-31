@@ -1,0 +1,218 @@
+.inputRow::after,
+.headerInnerLogin::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*공통*/
+
+.headerInnerLogin {
+  clear: both;
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.inputRow {
+  margin: 18px 0;
+  clear: both;
+}
+
+.inputRow.flex {
+  width: 100%;
+  display: flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.inputRow.flex li {
+  width: calc(50% - 5px);
+}
+
+.inputRow.flex li:first-child,
+.inputRow.flex li:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.inputRow.flex li:nth-child(2n - 1) {
+  margin-right: 5px;
+}
+.inputRow.flex li:nth-child(2n) {
+  margin-left: 5px;
+}
+
+.inputRow.flex button {
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  width: 100%;
+  height: 47px;
+  transition: all linear 0.3s;
+}
+
+.inputRow.flex button:hover {
+  background-color: #f7f7f7;
+  border-color: #d2d2d2;
+}
+
+.inputRow button {
+  outline: 0;
+  border: 0;
+}
+
+.inputRow.loginOption > *:first-child {
+  float: left;
+}
+
+.inputRow.loginOption > *:last-child {
+  float: right;
+}
+
+.inputRow.loginOption p {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.inputRow p,
+.inputRow span {
+  font-size: 0.87rem;
+  letter-spacing: -0.09rem;
+}
+
+.inputRow span.desc {
+  display: none;
+}
+
+.inputBox {
+  box-sizing: border-box;
+  transition: all linear 0.2s;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  height: 47px;
+  padding: 0 16px;
+}
+
+.inputBox:hover {
+  border-color: #757575;
+}
+
+.inputBox:active,
+.inputBox:focus {
+  border-color: #00c4c4;
+}
+
+.inputBox.error {
+  border-color: #ff6666;
+  background-color: #fff9f9;
+}
+
+.inputBox.error ~ span.desc {
+  color: #ff6666;
+  display: inline-block;
+}
+
+span.text {
+  color: #757575;
+  font-weight: 400;
+  display: inline-block;
+}
+
+p.text {
+  text-align: center;
+}
+
+/*로그인*/
+
+.loginWrap {
+  min-width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 80px 15px;
+}
+
+.loginWrap h2 {
+  font-size: 1.95rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 0.01rem;
+}
+
+.btnSubmit {
+  width: 100%;
+  height: 47px;
+  color: #fff;
+  background-color: #00c4c4;
+  transition: background-color linear 0.2s;
+  border-radius: 5px;
+}
+
+.btnSubmit:hover {
+  background-color: #00b2b2;
+}
+
+.btnSubmit.facebook {
+  background-color: #304d8a;
+}
+
+.btnSubmit.facebook:hover {
+  background-color: #2e4983;
+}
+
+#saveUserId {
+  margin-right: 2px;
+}
+
+a.register {
+  color: #29cacd;
+  text-decoration: underline;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+a.findAccount {
+  color: #757575;
+  font-weight: 400;
+}
+
+.orRow::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: -1;
+}
+
+.orRow {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.orRow span {
+  font-size: 0.8rem;
+  color: #757575;
+  font-weight: 800;
+  z-index: 10;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+/*회원가입*/
+@media (max-width: 1095px) {
+  .headerInnerLogin {
+    border: 0;
+  }
+  .headerInnerLogin h1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}

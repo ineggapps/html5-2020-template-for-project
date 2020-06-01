@@ -18,6 +18,69 @@ header {
   margin: 0 auto;
 }
 
+label {
+  position: relative;
+}
+
+/*체크박스*/
+label.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  transition: all linear 0.2s;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ccc;
+}
+
+label.checkbox:hover input ~ .checkmark {
+  border-color: #00c4c4;
+}
+
+label.checkbox input:checked ~ .checkmark {
+  background-color: #00c4c4;
+  border-color: #00c4c4;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+label.checkbox input:checked ~ .checkmark:after {
+  display: block;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .inputRow {
   margin: 18px 0;
   clear: both;
@@ -90,9 +153,15 @@ header {
 
 .inputRow span.desc {
   display: none;
+  color: #757575;
+}
+
+.inputRow span.desc.show {
+  display: inline-block;
 }
 
 .inputBox {
+  clear: both;
   box-sizing: border-box;
   transition: all linear 0.2s;
   border: 1px solid #d9d9d9;
@@ -130,6 +199,27 @@ p.text {
   text-align: center;
 }
 
+span.title {
+  font-size: 1.15rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+label.inputEvent span.title::after {
+  letter-spacing: 0rem;
+  margin-left: 3px;
+  content: "(선택사항)";
+  font-size: 0.95rem;
+  color: #333;
+}
+
+label.inputEvent span.desc {
+  font-size: 0.85rem;
+  letter-spacing: -0.07rem;
+  line-height: 1.2rem;
+  margin-top: 5px;
+}
+
 /*로그인*/
 
 .loginWrap,
@@ -138,12 +228,19 @@ p.text {
   max-width: 400px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.loginWrap {
   padding: 80px 15px;
+}
+
+.registerWrap {
+  padding: 40px 16px 96px;
 }
 
 .loginWrap h2 {
   font-size: 1.95rem;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 30px;
   letter-spacing: 0.01rem;
 }
@@ -157,6 +254,15 @@ p.text {
   border-radius: 5px;
 }
 
+.btnSubmit.inbox {
+  width: auto;
+  height: 38px;
+  position: absolute;
+  top: -7px;
+  right: 4px;
+  padding: 0 10px;
+}
+
 .btnSubmit:hover {
   background-color: #00b2b2;
 }
@@ -167,6 +273,11 @@ p.text {
 
 .btnSubmit.facebook:hover {
   background-color: #2e4983;
+}
+
+.btnSubmit.disabled {
+  background: #8de5e5;
+  cursor: default;
 }
 
 #saveUserId {
@@ -205,7 +316,7 @@ a.findAccount {
 .orRow span {
   font-size: 0.8rem;
   color: #757575;
-  font-weight: 800;
+  font-weight: 700;
   z-index: 10;
   padding: 0 10px;
   background-color: #fff;
@@ -214,9 +325,13 @@ a.findAccount {
 /*회원가입*/
 .registerWrap h2 {
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 30px;
   letter-spacing: 0.01rem;
+}
+
+.registerWrap h2.small {
+  font-size: 2.2rem;
 }
 
 p.registerText {
@@ -240,7 +355,7 @@ p.registerText {
   background-size: 100%;
 }
 
-.registerWrap {
+.registerContainer .registerWrap {
   margin-right: 50%;
 }
 
@@ -264,7 +379,7 @@ p.registerText {
     opacity: 0;
     display: none;
   }
-  .registerWrap {
+  .registerContainer .registerWrap {
     margin: 0 auto !important;
   }
 }

@@ -127,7 +127,8 @@ p.text {
 
 /*로그인*/
 
-.loginWrap {
+.loginWrap,
+.registerWrap {
   min-width: 400px;
   max-width: 400px;
   margin: 0 auto;
@@ -135,7 +136,8 @@ p.text {
   padding: 80px 15px;
 }
 
-.loginWrap h2 {
+.loginWrap h2,
+.registerWrap h2 {
   font-size: 1.95rem;
   font-weight: 800;
   margin-bottom: 30px;
@@ -206,6 +208,33 @@ a.findAccount {
 }
 
 /*회원가입*/
+p.registerText {
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+.registerContainer {
+  position: relative;
+}
+
+.registerContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 400px;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=622&q=80")
+    no-repeat;
+  background-size: 100%;
+}
+
+.registerWrap {
+  margin-right: 50%;
+}
+
+/*반응형*/
 @media (max-width: 1095px) {
   .headerInnerLogin {
     border: 0;
@@ -214,5 +243,18 @@ a.findAccount {
     width: 100%;
     display: block;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerInnerLogin {
+    border: 0;
+  }
+  .registerContainer::before {
+    opacity: 0;
+    display: none;
+  }
+  .registerWrap {
+    margin: 0 auto !important;
   }
 }

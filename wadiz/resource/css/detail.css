@@ -1,0 +1,111 @@
+.projectTitle {
+  position: relative;
+  color: #fff;
+  padding: 50px 0;
+  overflow: hidden;
+  user-select: none;
+}
+.projectTitle h2,
+.projectTitle h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.projectTitle h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.projectTitle h3 {
+  padding-top: 50px;
+  color: #00b2b2;
+}
+.projectTitle .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: brightness(0.8) blur(5px);
+}
+
+ul.detailNav {
+  clear: both;
+  min-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #f0f2f5;
+  border-bottom: 3px solid #e5e5e5;
+  user-select: none;
+}
+
+ul.detailNav li a {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 5px;
+  display: inline-block;
+  text-align: center;
+  color: #353535;
+  font-weight: 400;
+}
+
+ul.detailNav li {
+  display: inline-block;
+}
+
+ul.detailNav li:not(:last-child) {
+  margin-right: 30px;
+}
+
+ul.detailNav li.on::after {
+  display: block;
+  position: relative;
+  top: 3px;
+  width: 100%;
+  height: 3px;
+  background-color: #00b2b2;
+  content: "";
+}
+
+ul.detailNav a span.badge {
+  display: inline;
+  position: relative;
+  top: -3px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 0 3px;
+  color: #00b2b2;
+}
+/*
+.gnbSub.detail a.on span:first-child::after {
+  background-color: #00b2b2;
+  width: 100%;
+}
+
+.gnbSub.detail li a span:first-child {
+  width: auto;
+  padding: 0;
+}
+
+.gnbSub.detail a span.badge {
+  display: inline;
+  position: relative;
+  top: -3px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 0 3px;
+  color: #00b2b2;
+}
+
+.gnbSub.detail a span.badge::after {
+  display: none;
+}
+*/
+
+@media (max-width: 768px) {
+  .projectTitle {
+    display: none;
+  }
+}

@@ -217,9 +217,13 @@ h1.logo {
 
 /*footer*/
 
-ul.fnb {
+.footerFull {
+  width: 100%;
   border-top: 1px solid #e6eaed;
   border-bottom: 1px solid #e6eaed;
+}
+
+ul.fnb {
   height: 57px;
   line-height: 57px;
   user-select: none;

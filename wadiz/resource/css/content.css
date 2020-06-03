@@ -122,18 +122,6 @@ ul.categoryContent .text {
   margin-bottom: 20px;
 }
 
-.progress {
-  height: 3px;
-  background-color: #e6eaed;
-}
-
-.progressBar {
-  width: 0;
-  height: 100%;
-  background-color: #00b2b2;
-  transition: all linear 0.2s;
-}
-
 .status ul li span.percent {
   color: #00b2b2;
   font-size: 1.1rem;

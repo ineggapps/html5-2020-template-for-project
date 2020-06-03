@@ -1,3 +1,8 @@
+.detailWrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .projectTitle {
   position: relative;
   color: #fff;
@@ -16,7 +21,7 @@
   font-weight: 600;
 }
 .projectTitle h3 {
-  padding-top: 50px;
+  padding-top: 35px;
   color: #00b2b2;
 }
 .projectTitle .overlay {
@@ -26,6 +31,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
+  background-color: #353535;
   background-position: 50% 50%;
   background-size: cover;
   filter: brightness(0.8) blur(5px);
@@ -78,34 +84,118 @@ ul.detailNav a span.badge {
   margin: 0 3px;
   color: #00b2b2;
 }
-/*
-.gnbSub.detail a.on span:first-child::after {
-  background-color: #00b2b2;
+
+.detailWrap {
+  clear: both;
+  max-width: 1024px;
+  margin: 0 auto;
+  /* display: flex;
+  display: -ms-flexbox; */
+}
+
+.detailWrap > * {
+  padding: 35px 0;
+  box-sizing: border-box;
+}
+
+.detailContent {
+  float: left;
+  width: calc(100% - 364px);
+}
+
+.detailContent > * {
   width: 100%;
 }
 
-.gnbSub.detail li a span:first-child {
-  width: auto;
-  padding: 0;
+.detailSide {
+  padding-left: 30px;
+  padding-right: 30px;
+  float: right;
+  margin-left: 10px;
+  min-width: 354px;
+  max-width: 354px;
 }
 
-.gnbSub.detail a span.badge {
-  display: inline;
+p.stateText {
+  color: #4a4a4a;
+  padding: 20px 0;
+}
+
+p.stateText strong {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+p.stateText:first-child {
+  padding-left: 3px;
+  font-size: 1.77rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+p.stateText:last-child {
+  margin-bottom: 35px;
+}
+
+.detailSide a.btnSubmit {
+  width: 100%;
+}
+
+.detailSideController {
+  padding: 10px 0;
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.detailSideController li {
+  width: calc(36% - 5px);
+}
+.detailSideController li:not(:last-child) {
+  margin-right: 5px;
+}
+
+span.icon {
   position: relative;
-  top: -3px;
-  font-size: 0.85rem;
-  font-weight: 400;
-  margin: 0 3px;
-  color: #00b2b2;
+  top: 4px;
+  left: -8px;
+  margin-right: 5px;
+  display: inline-block;
+  line-height: 47px;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
-.gnbSub.detail a span.badge::after {
-  display: none;
+span.icon.heart {
+  background-image: url("../images/btn_icon_heart_blank.png");
 }
-*/
+span.icon.talk {
+  background-image: url("../images/btn_icon_comment.png");
+}
+span.icon.share {
+  background-image: url("../images/btn_icon_share.png");
+}
+/*반응형*/
+
+@media (max-width: 1097px) {
+}
 
 @media (max-width: 768px) {
   .projectTitle {
+    display: none;
+  }
+  .detailContent {
+    clear: both;
+    min-width: 100%;
+  }
+  .detailSide {
+    min-width: 100%;
+  }
+  .detailSideController {
     display: none;
   }
 }

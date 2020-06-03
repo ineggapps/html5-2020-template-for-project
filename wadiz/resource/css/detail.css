@@ -39,7 +39,7 @@
 
 ul.detailNav {
   clear: both;
-  min-width: 500px;
+  min-width: 384px;
   margin: 0 auto;
   text-align: center;
   border-top: 1px solid #f0f2f5;
@@ -197,5 +197,11 @@ span.icon.share {
   }
   .detailSideController {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  ul.detailNav li:not(:last-child) {
+    margin-right: 15px;
   }
 }

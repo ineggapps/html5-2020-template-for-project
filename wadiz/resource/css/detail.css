@@ -1,4 +1,5 @@
-.detailWrap::after {
+.detailWrap::after,
+.brandInfoBox::after {
   content: "";
   display: block;
   clear: both;
@@ -159,7 +160,7 @@ p.stateText:last-child {
 span.icon {
   position: relative;
   top: 4px;
-  left: -8px;
+  left: -5px;
   margin-right: 5px;
   display: inline-block;
   line-height: 47px;
@@ -179,6 +180,35 @@ span.icon.talk {
 span.icon.share {
   background-image: url("../images/btn_icon_share.png");
 }
+
+.brandInfoBox {
+  width: 100%;
+  border: 1px solid #e6eaed;
+}
+.brandInfoBox a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px;
+}
+.brandInfoBox a span {
+  display: inline-block;
+  height: 100%;
+}
+
+.brandInfoBox span.image {
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 15px;
+  background-image: url("../images/user-64.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.brandInfoBox span.name {
+  font-size: 1.1rem;
+}
+
 /*반응형*/
 
 @media (max-width: 1097px) {

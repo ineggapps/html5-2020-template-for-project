@@ -252,6 +252,101 @@ span.icon.share {
   border-top: 1px solid #e6eaed;
 }
 
+.rewards {
+  margin: 20px 0;
+}
+
+.rewards h3 {
+  margin: 20px 0 10px;
+}
+
+.rewardItem {
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  color: #60656a;
+  cursor: pointer;
+  position: relative;
+}
+
+.rewardItem:hover .overlay {
+  opacity: 0.8;
+}
+
+.rewardItem .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00b2b2;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+.rewardItem .overlay p {
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  user-select: none;
+}
+
+.rewardItem > dl {
+  margin: 0 0 30px;
+}
+
+.rewardItem dl.rewardInfo dt {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.rewardItem dl.rewardOptions dt {
+  font-weight: bold;
+}
+.rewardItem dl.rewardOptions dd {
+  color: #333;
+}
+
+.rewardItem .rewardOptions > * {
+  margin: 10px 0;
+}
+
+.rewardItem dl.rewardOptions {
+  font-size: 0.88rem;
+}
+
+.rewardItem dl p,
+.rewardItem .rewardQuantity span {
+  margin: 10px 0;
+  font-size: 0.88rem;
+}
+
+.rewardItem .rewardQuantity .mint {
+  color: #00b2b2;
+  padding: 0 2px;
+}
+.rewardItem .limitQuantity,
+.rewardItem .remainingQuantity {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.rewardItem .highlighting {
+  color: #00b2b2;
+  background-color: #e7f9f9;
+}
+
+.rewardItem .quantityRow {
+  margin: 10px 0;
+}
+
 /*반응형*/
 
 @media (max-width: 1097px) {

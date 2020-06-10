@@ -11,6 +11,10 @@
   transition: all linear 0.2s;
 }
 
+.progressBar.warning {
+  background-color: #ffb500;
+}
+
 /*민트색 버튼*/
 a.btnSubmit {
   display: block;
@@ -63,6 +67,14 @@ a.btnSubmit {
   height: 47px;
   line-height: 47px;
   transition: all linear 0.3s;
+}
+
+.btnPlain.round {
+  border-radius: 5px;
+}
+
+.btnPlain.semiRound {
+  border-radius: 3px;
 }
 
 .btnPlain:hover {

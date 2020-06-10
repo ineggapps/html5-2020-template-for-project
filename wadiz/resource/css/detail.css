@@ -1,5 +1,6 @@
 .detailWrap::after,
-.brandInfoBox::after {
+.brandInfoBox::after,
+.brandStatus::after {
   content: "";
   display: block;
   clear: both;
@@ -207,6 +208,48 @@ span.icon.share {
 }
 .brandInfoBox span.name {
   font-size: 1.1rem;
+}
+
+.brandInfoBox .brandStatus {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.brandInfoBox .brandStatus h5 {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.brandInfoBox .brandStatus .statusItem {
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+}
+
+.btnComponent {
+  padding: 0 20px;
+}
+
+.brandInfoRowInner {
+  padding: 20px;
+  color: #60656a;
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+  background-color: #fafbfc;
+}
+.brandInfoRowInner a {
+  color: #7686bf;
+}
+
+.brandInfoBoxRow > p {
+  color: #60656a;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.brandInfoBoxRow {
+  margin: 25px 0 0;
+  border-top: 1px solid #e6eaed;
 }
 
 /*반응형*/

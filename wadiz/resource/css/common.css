@@ -81,3 +81,14 @@ a.btnSubmit {
   background-color: #f7f7f7;
   border-color: #d2d2d2;
 }
+
+.btnPlain.gray {
+  color: #fff;
+  background-color: #90949c;
+  border-color: #90949c;
+}
+
+.btnPlain.gray:hover {
+  background-color: #60656a;
+  border-color: #60656a;
+}

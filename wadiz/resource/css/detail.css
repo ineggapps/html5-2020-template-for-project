@@ -252,12 +252,37 @@ span.icon.share {
   border-top: 1px solid #e6eaed;
 }
 
-.rewards {
+.rowBox {
   margin: 20px 0;
 }
 
-.rewards h3 {
+.rowBox h3 {
   margin: 20px 0 10px;
+  user-select: none;
+}
+
+.rowBoxInner h4.large {
+  font-size: 1rem;
+}
+
+.rowBox.border {
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  font-size: 0.88rem;
+  position: relative;
+}
+
+.rowBoxInner > *:not(:first-child) {
+  margin: 10px 0 0;
+}
+
+p.gray {
+  color: #60656a;
+}
+
+p.small {
+  font-size: 0.85rem;
+  line-height: 1rem;
 }
 
 .rewardItem {
@@ -345,6 +370,44 @@ span.icon.share {
 
 .rewardItem .quantityRow {
   margin: 10px 0;
+}
+
+.reports #reportProject {
+  height: 35px;
+  line-height: 35px;
+}
+
+.rank h4::after {
+  margin: 10px 0 0;
+  content: "";
+  display: block;
+  background-color: #dddddd;
+  width: 100%;
+  height: 1px;
+}
+
+.rank .rankNumber {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-right: 8px;
+  font-size: 0.85rem;
+  background-color: #90949c;
+  color: #fff;
+}
+
+.rankList {
+  padding: 2px;
+}
+
+.rankList li {
+  margin: 2px 0;
+}
+
+.rankList li a {
+  font-weight: 400;
 }
 
 /*반응형*/

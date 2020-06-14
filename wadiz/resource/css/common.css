@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*진행상황 바*/
 .progress {
   height: 3px;
@@ -31,6 +33,16 @@ a.btnSubmit {
   border-radius: 5px;
 }
 
+.btnSubmit.bordering {
+  background-color: #fff;
+  color: #00c4c4 !important;
+  border: 1px solid #00c4c4;
+}
+
+.btnSubmit.bordering:hover {
+  color: #fff;
+}
+
 .btnSubmit.inbox {
   width: auto;
   height: 38px;
@@ -41,6 +53,7 @@ a.btnSubmit {
 }
 
 .btnSubmit:hover {
+  color: #fff;
   background-color: #00b2b2;
 }
 

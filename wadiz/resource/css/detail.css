@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .detailWrap::after,
 .brandInfoBox::after,
 .brandStatus::after {
@@ -253,6 +255,7 @@ span.icon.share {
 }
 
 .rowBox {
+  user-select: none;
   margin: 20px 0;
 }
 

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>크라우드 펀딩</title>
+    <link rel="stylesheet" href="resource/css/reset.css" />
+    <link rel="stylesheet" href="resource/css/layout.css" />
+
+    <!--[if lt IE 9]>
+      <script src="resource/js//html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="resource/js/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="overlay"></div>
+      <header id="header">
+        <div class="headerInner">
+          <h3 class="btnMenu" id="btnGnbMenu"><span class="hidden">메뉴</span></h3>
+          <h1 class="logo"><a href="#">Brand studio</a></h1>
+          <div class="projectTitle"><h2>${브랜드명}</h2></div>
+          <ul class="rightGnb">
+            <li class="menuExit">
+              <a href="#" class="none"><span>나가기</span></a>
+            </li>
+            <li class="menuTemporary">
+              <a href="#"><span>임시저장</span></a>
+            </li>
+            <!-- <li class="menuPreview">
+              <a href="#"><span>미리보기</span></a>
+            </li> -->
+          </ul>
+        </div>
+      </header>
+      <main id="content">
+        <div class="contentWrapper">
+          <div class="columnSide">
+            <div class="titleInbox">
+              <p class="projectName">${브랜드명}의<br />멋진 프로젝트</p>
+              <p class="info">프로젝트 번호: 00000</p>
+            </div>
+            <div class="menuList">
+              <ul class="subMenuItems">
+                <li>
+                  <div class="menuItem">
+                    <div class="menuName">
+                      <a href="#">브랜드 관리</a>
+                      <a href="#" class="arrow"><span class="hidden">열기/닫기</span></a>
+                    </div>
+                    <ul class="subMenu">
+                      <li class="subMenuItem"><a href="#">브랜드 정보 수정</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="menuItem">
+                    <div class="menuName">
+                      <a href="#" class="on">펀딩/후원 준비</a>
+                      <a href="#" class="arrow"><span class="hidden">열기/닫기</span></a>
+                    </div>
+                    <ul class="subMenu">
+                      <li class="subMenuItem"><a href="#" class="on">기본 정보</a></li>
+                      <li class="subMenuItem"><a href="#">리워드 설계</a></li>
+                      <li class="subMenuItem"><a href="#">스토리 작성</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="menuItem">
+                    <div class="menuName">
+                      <a href="#">새소식 관리</a>
+                      <a href="#" class="arrow"><span class="hidden">열기/닫기</span></a>
+                    </div>
+                    <ul class="subMenu">
+                      <li class="subMenuItem"><a href="#">새소식 목록</a></li>
+                      <li class="subMenuItem"><a href="#">새소식 등록</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="menuItem">
+                    <div class="menuName">
+                      <a href="#">펀딩/후원 현황</a>
+                      <a href="#" class="arrow"><span class="hidden">열기/닫기</span></a>
+                    </div>
+                    <ul class="subMenu">
+                      <li class="subMenuItem"><a href="#">결제/후원 현황</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="menuItem">
+                    <div class="menuName">
+                      <a href="#">발송 관리</a>
+                      <a href="#" class="arrow"><span class="hidden">열기/닫기</span></a>
+                    </div>
+                    <ul class="subMenu">
+                      <li class="subMenuItem"><a href="#">배송현황 조회</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="menuItem">
+                    <div class="menuName">
+                      <a href="#">문의사항 관리</a>
+                      <a href="#" class="arrow"><span class="hidden">열기/닫기</span></a>
+                    </div>
+                    <ul class="subMenu">
+                      <li class="subMenuItem"><a href="#">문의현황 조회</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="columnContent">
+            <article class="row">
+              <h2>기본 정보</h2>
+              <p class="description">프로젝트를 소개할 기본 정보를 입력하세요.</p>
+
+              <div class="infoItemWrap">
+                <div class="infoItem required">
+                  <div class="infoTitle"><span>프로젝트 제목</span></div>
+                  <p class="desc">프로젝트 제목을 입력하세요</p>
+                  <div class="inputWrap">
+                    <input type="text" id="projectName" name="projectName" />
+                  </div>
+                </div>
+
+                <div class="infoItem">
+                  <div class="infoTitle"><span>프로젝트 진행상황</span></div>
+                  <p class="desc">프로젝트 진행상황에 대해 짤막하게 메모를 입력하세요.</p>
+                  <div class="inputWrap">
+                    <input type="text" id="projectStatusMemo" name="projectStatusMemo" />
+                  </div>
+                </div>
+
+                <div class="infoItem required">
+                  <div class="infoTitle"><span>대표 이미지</span></div>
+                  <div class="inputWrap">
+                    <input type="file" name="projectImage" id="projectImage" class="hide" />
+                    <div class="imageBox"></div>
+                    <button type="button" id="btnProjectImage" class="btnDarkContrast">
+                      <span class="iconCamera">&nbsp;</span>등록하기
+                    </button>
+                  </div>
+                  <p class="desc">
+                    3MB 이하의 JPEG, PNG 파일 <br />
+                    사이즈 : 1200X675 픽셀 이상<br />
+                    텍스트 및 로고 삽입 금지<br />
+                  </p>
+                </div>
+
+                <div class="infoItem required">
+                  <div class="infoTitle"><span>카테고리</span></div>
+                  <div class="inputWrap">
+                    <select name="categoryNo">
+                      <option>::선택::</option>
+                      <option value="1">테크·가전</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="infoItem required">
+                  <div class="infoTitle"><span>프로젝트 시작일</span></div>
+                  <p class="desc">리워드를 개시하기 위해 프로젝트 시작일을 선택하세요.</p>
+                  <div class="inputWrap">
+                    <input type="text" id="projectStartDate" name="projectStartDate" />
+                  </div>
+                </div>
+
+                <div class="infoItem required">
+                  <div class="infoTitle"><span>프로젝트 종료일</span></div>
+                  <p class="desc">리워드를 마감하기 위한 프로젝트 종료일을 선택하세요.</p>
+                  <div class="inputWrap">
+                    <input type="text" id="projectEndDate" name="projectEndDate" />
+                  </div>
+                </div>
+
+                <div class="infoItem required">
+                  <div class="infoTitle"><span>검색용 태그</span></div>
+                  <p class="desc">엔터를 누르면 태그가 등록됩니다. (최대 10개까지 입력 가능)</p>
+                  <div class="inputWrap">
+                    <input type="text" id="keyword" name="keyword" />
+                  </div>
+                </div>
+
+                <div class="infoItem" id="tags">
+                  <div class="infoTitle primary small strong" id="hashTitle">
+                    0/10개의 해시 태그
+                  </div>
+                  <ul class="hashItems">
+                    <li class="template">
+                      <span class="text">#안녕</span
+                      ><a href="#" class="btnHashDelete"
+                        ><span class="hidden">해시태그 삭제</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="btnSubmit" id="btnSave">저장하기</a>
+            </article>
+          </div>
+        </div>
+      </main>
+      <script src="resource/js/brand_studio.js"></script>
+    </div>
+  </body>
+</html>

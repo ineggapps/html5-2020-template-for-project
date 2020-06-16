@@ -133,6 +133,7 @@ header {
 .rightGnb li {
   float: right;
   margin: 0 5px;
+  font-size: 0.9rem;
 }
 
 .rightGnb .btnSubmit {

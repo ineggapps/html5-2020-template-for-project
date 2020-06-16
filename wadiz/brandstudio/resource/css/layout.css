@@ -114,6 +114,8 @@ header {
 }
 
 .headerInner h1.logo {
+  overflow: hidden;
+  min-width: 123px;
   font-size: 1.2rem;
   display: inline-block;
 }
@@ -367,7 +369,11 @@ a.btnHashDelete span {
 #btnSave {
   width: 30%;
 }
-
+@media (min-width: 768px) {
+  .overlay {
+    display: none !important; /*화면을 찌그러뜨렸다가 다시 폈을 때 숨겨야 함*/
+  }
+}
 @media (max-width: 768px) {
   .projectTitle,
   .menuExit,
@@ -382,8 +388,8 @@ a.btnHashDelete span {
   .columnSide {
     /*모바일 웹 왼쪽 메뉴 참고!!!1*/
     position: fixed;
-    height: 100%; /*모바일웹.. 고정할 때*/
-    overflow: auto; /*모바일 웹에서 세로가 넘치면 스크롤*/
+    height: 100% !important; /*모바일웹.. 고정할 때*/
+    /* overflow: auto; 모바일 웹에서 세로가 넘치면 스크롤 */
     left: 0;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -393,6 +399,11 @@ a.btnHashDelete span {
     transition: transform 0.2s, -webkit-transform 0.2s;
     height: auto;
     max-height: 100%;
+  }
+
+  .menuList {
+    height: 100%; /*세로도 100%로 지정해 주어야 스크롤이 생긴다.*/
+    overflow: auto !important; /*모바일 웹에서 세로 중 메뉴리스트가 넘치면 이것만 스크롤하도록 설정*/
   }
 
   .columnSide.show {

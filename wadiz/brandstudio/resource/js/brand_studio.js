@@ -1,3 +1,12 @@
+$(function () {
+  //오버레이 창이 떴을 때 스크롤 막기
+  $(".overlay").on("scroll touchmove mousewheel", function (e) {
+    if ($(this).hasClass("show")) {
+      e.preventDefault();
+    }
+  });
+});
+
 //모바일 버튼 클릭
 $(function () {
   $("#btnGnbMenu").click(function () {
@@ -7,8 +16,7 @@ $(function () {
   });
 
   $(".overlay").click(function () {
-    $(".columnSide").css("top", "");
-    $(".columnSide").removeClass("show");
+    $(".columnSide").css("top", "0").removeClass("show");
     $(".overlay").removeClass("show");
   });
 });

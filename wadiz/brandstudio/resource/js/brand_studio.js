@@ -10,13 +10,12 @@ $(function () {
 //모바일 버튼 클릭
 $(function () {
   $("#btnGnbMenu").click(function () {
-    $(".columnSide").css("top", 0);
     $(".columnSide").addClass("show");
     $(".overlay").addClass("show");
   });
 
   $(".overlay").click(function () {
-    $(".columnSide").css("top", "0").removeClass("show");
+    $(".columnSide").removeClass("show");
     $(".overlay").removeClass("show");
   });
 });

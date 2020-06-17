@@ -81,7 +81,7 @@ h2 {
   opacity: 0.8;
 }
 
-header {
+header#header {
   background-color: #fff;
   position: fixed;
   width: 100%;
@@ -254,7 +254,7 @@ header {
   flex: 1 1;
 }
 
-.columnContent h2 {
+article.row h2 {
   font-size: 2rem;
   font-weight: 700;
   margin: 10px 0;
@@ -436,5 +436,43 @@ a.btnHashDelete span {
 @media (max-width: 295px) {
   #wrap {
     min-width: 295px;
+  }
+}
+
+.centerInner .inputWrap,
+.centerInner .infoItem .inputWrap input,
+.centerInner .infoItem .inputWrap select {
+  width: calc(100% - 12px);
+}
+/*메이커 만들기 레이아웃 (기본)*/
+
+header h1.logoCenter {
+  padding-top: 20px;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.centerInner {
+  width: calc(100% - 200px);
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .centerInner {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .submitContainer {
+    width: calc(100% - 80px);
+    height: 57px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 40px;
   }
 }

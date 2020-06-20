@@ -9,6 +9,15 @@ header {
   display: block;
   clear: both;
 }
+
+.bgWhite {
+  background-color: #fff;
+}
+
+.contentWrapper {
+  background-color: #f5f7fa;
+}
+
 .projectTitle {
   position: relative;
   width: 960px;
@@ -97,6 +106,7 @@ ul.detailNav a span.badge {
 }
 
 .contentInner {
+  box-sizing: border-box;
   width: 960px;
   margin: 0 auto;
   padding: 20px 0;
@@ -112,9 +122,10 @@ ul.detailNav a span.badge {
   .contentInner {
     width: 100%;
   }
+
   .contentInner {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .projectTitle {
     text-align: center;

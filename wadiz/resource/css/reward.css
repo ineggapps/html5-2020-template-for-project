@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/*hack*/
+.rewardItemTitle::after,
+.rewardItemBox input.checkbox::after,
+.rewardBuyItem::after,
+.rewardShippingItem label::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.btnSubmit {
+  border: 0 none;
+}
+
+.center {
+  text-align: center;
+}
+
+/*옵션체크박스*/
+/*체크박스
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+label.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label.checkbox input {
+  /* position: absolute; */
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  background-color: #fff;
+  transition: all linear 0.2s;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ccc;
+}
+
+label.checkbox:hover input ~ .checkmark {
+  border-color: #00c4c4;
+}
+
+label.checkbox input:checked ~ .checkmark {
+  background-color: #00c4c4;
+  border-color: #00c4c4;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+label.checkbox input:checked ~ .checkmark:after {
+  display: block;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rewardWrap {
+  width: 100%;
+}
+.rewardInner {
+  width: 860px;
+  margin: 10px auto;
+}
+
+/*리워드 프로세스*/
+.rewardProcess {
+  margin: 20px 0;
+  text-align: center;
+}
+.rewardProcess li {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  user-select: none;
+  border-radius: 100%;
+  border: 1px dotted #4a4a4a;
+  display: inline-block;
+}
+.rewardProcess li:nth-child(2) {
+  margin: 0 40px;
+  position: relative;
+}
+.rewardProcess li:nth-child(2)::before,
+.rewardProcess li:nth-child(2)::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 39px;
+  width: 44px;
+  height: 1px;
+  border-top: 1px dotted #4a4a4a;
+}
+
+.rewardProcess li:nth-child(2)::before {
+  left: -55%;
+}
+.rewardProcess li:nth-child(2)::after {
+  left: 100%;
+}
+
+.rewardProcess li.on {
+  color: #fff;
+  background-color: #00c4c4;
+  border: 1px solid #00c4c4;
+}
+
+/*리워드 옵션 고르는 항목*/
+.rewardItemTitle {
+  margin: 40px 0;
+}
+.rewardItemTitle > * {
+  float: left;
+}
+.rewardItemTitle h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.rewardItemBox {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.rewardItemBox dl > * {
+  display: inline-block;
+}
+
+.rewardItemBox dl > dt {
+  vertical-align: top;
+  margin: 0 50px;
+  text-align: center;
+}
+
+.rewardItemBox dl > dt:first-child {
+  margin-top: 30px;
+}
+
+.rewardItemBox dl > dd {
+  width: 80%;
+}
+
+.rewardItemBox dl > dd h5 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.rewardItemBox dl > dd p {
+  margin: 5px 0;
+}
+
+.rewardItemText {
+  font-size: 0.95rem;
+}
+
+.rewardItemContent,
+.rewardItemBox {
+  margin: 20px 0;
+}
+
+.rewardItemContent ul li.on .rewardOptionItem {
+  background-color: #e7f9f9;
+}
+
+.rewardOptionWrapper {
+  margin: 20px 0;
+  display: none;
+}
+
+.rewardOptionWrapper.active {
+  display: block;
+}
+
+.rewardOptionBox {
+  display: inline-block;
+}
+
+.optionRequestQuantity {
+  width: 10%;
+  margin-right: 10px;
+}
+
+.optionAnswer {
+  width: calc(80% - 10px);
+}
+
+.rewardOptionBox input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #4a4a4a;
+  transition: all ease-in-out 0.2s;
+}
+
+.rewardOptionBox input.center {
+  text-align: center;
+}
+
+.rewardOptionBox input:focus {
+  border-color: #00c4c4;
+}
+
+.rewardItemContent .btnSubmit {
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.rewardBuyOption {
+  display: inline-block;
+}
+.rewardBuyInformation {
+  float: right;
+}
+
+/*step2*/
+.rewardBuyList {
+  border-top: 1.5px solid #4a4a4a;
+  color: #4a4a4a;
+}
+.rewardBuyList li {
+  border-bottom: 0.5px dotted #4a4a4a;
+}
+.rewardBuyItem {
+  padding: 10px 0;
+}
+.rewardBuyTitle {
+  color: #00c4c4;
+  font-weight: 500;
+}
+.rewardBuyInformation {
+  float: right;
+}
+.rewardBuyInformation > *:first-child {
+  margin-right: 5px;
+}
+.rewardBuyText {
+  margin: 10px 0;
+}
+
+.rewardShippingWrapper h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.rewardBuySummary {
+  background-color: #ececec;
+}
+
+.rewardBuySummary dl {
+  padding: 15px 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.rewardBuySummary dl > * {
+  display: table-cell;
+}
+.rewardBuySummary dl > dt {
+  width: 140px;
+  padding: 7px 0 7px 15px;
+}
+.rewardBuySummary dl > dd {
+  padding: 7px 15px 7px 0;
+  text-align: right;
+}
+
+.inputLabel {
+  display: block;
+  margin: 5px 0;
+}
+.rewardShippingWrapper {
+  margin: 30px 0;
+}
+
+.rewardShippingItem > * {
+  margin: 5px 0;
+}
+.rewardShippingItem input[type="text"] {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btnSubmit.noFull {
+  width: 140px;
+}
+
+/*반응형 웹*/
+
+@media (max-width: 960px) {
+  .rewardProcess li {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 0.8rem;
+  }
+  .rewardProcess li:nth-child(2) {
+    margin: 0 20px;
+    position: relative;
+  }
+  .rewardProcess li:nth-child(2)::before,
+  .rewardProcess li:nth-child(2)::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    width: 20px;
+    height: 1px;
+    border-top: 1px dotted #4a4a4a;
+  }
+
+  .rewardProcess li:nth-child(2)::before {
+    left: -36%;
+  }
+
+  .rewardProcess li:nth-child(2)::after {
+    left: 105%;
+  }
+  .rewardItemTitle > * {
+    float: none;
+    margin: 10px 0;
+  }
+
+  .rewardInner {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .rewardInner.padding {
+    width: 90%;
+    margin: 0 auto !important;
+    padding: 0 30px;
+  }
+
+  .rewardItemBox dl > * {
+    display: block;
+  }
+
+  .rewardItemBox dl > dt {
+    margin: 0 0 20px !important;
+  }
+}

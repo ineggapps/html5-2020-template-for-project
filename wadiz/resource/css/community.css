@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.btnReply {
+  background-color: #fff;
+  padding: 5px 10px;
+  transition: all ease-in-out 0.2s;
+  border: 1px solid #ccced0;
+  border-radius: 3px;
+}
+
+.btnReply:hover {
+  background-color: #f0f2f5;
+}
+
+.commentWrap::after,
+.commentItem::after,
+.commentInput::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.commentItem,
+.commentInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.commentSide,
+.commentInputSide {
+  width: 50px;
+  float: left;
+}
+
+.commentContent {
+  margin: 20px 0;
+}
+
+.commentArea,
+.commentInputContent {
+  width: calc(100% - 50px);
+  float: left;
+  word-break: break-all;
+}
+
+.commentHeader span.author {
+  font-weight: 600;
+}
+
+.commentHeader span.date {
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+
+.commentInput input {
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  position: relative;
+  padding: 5px;
+}
+
+.commentItem.reply {
+  margin-top: 20px;
+}
+
+.reply {
+  background-color: #f5f7fa;
+}
+
+/*프로필 아바타 사진*/
+span.commentAvatar {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: #a0a0a0;
+  border-radius: 100%;
+  text-indent: -1000em;
+}
